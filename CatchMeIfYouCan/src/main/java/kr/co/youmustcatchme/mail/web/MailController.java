@@ -60,7 +60,8 @@ public class MailController {
 		msg.addRecipient(Message.RecipientType.TO, toAddr);//받는 사람
 		
 		msg.setContent(content,"text/html; charset=UTF-8"); // 내용과 인코딩
-		
+		System.out.println("내용 : "+content);
+		System.out.println("제목 : "+subject);
 		Transport.send(msg); //전송
 		
 	} catch(Exception e){

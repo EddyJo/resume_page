@@ -2,6 +2,7 @@ package kr.co.youmustcatchme.member.web;
 
 import java.util.List;
 
+import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Controller;
@@ -23,6 +24,8 @@ public class MemberController {
 	@Autowired
 	IMemberRepo memberRepo;
 	
+	@Autowired
+	StandardPBEStringEncryptor enc;
 	
 	//로그인
 	@SuppressWarnings("finally")
@@ -36,7 +39,7 @@ public class MemberController {
 		
 		try{
 			MemberVO member = memberRepo.getMemberInfo(memberId);
-			if(member.getPassword().equals(password)) {
+			if(enc.decrypt(member.getPassword()).equals(password)) {
 				result = member.getUserName() + "님 로그인 하였습니다.";
 			}else {
 				result = "비밀번호가 다릅니다.";
@@ -71,7 +74,10 @@ public class MemberController {
 	@RequestMapping(value="/join.do", method=RequestMethod.POST)
 	public String doJoin(MemberVO member, RedirectAttributes redirectAttrs) {
 		try {
+			String password = enc.encrypt(member.getPassword());
+			member.setPassword(password);
 			memberRepo.insertMember(member);
+			System.out.println("회원가입");
 		}catch(RuntimeException e) {
 			redirectAttrs.addFlashAttribute("message", e.getMessage());
 		}

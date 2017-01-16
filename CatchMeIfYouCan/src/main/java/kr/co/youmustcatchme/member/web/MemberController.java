@@ -84,8 +84,4 @@ public class MemberController {
 		return "redirect:/";
 	}
 	
-	@RequestMapping("/temp.do")
-	public String temp(Model model) {
-		return "temp";
-	}
 }

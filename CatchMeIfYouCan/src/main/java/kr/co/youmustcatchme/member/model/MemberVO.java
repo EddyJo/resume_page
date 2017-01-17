@@ -4,8 +4,17 @@ public class MemberVO {
 	String memeberId;
 	String password;
 	String userName;
+	String email;
 	String job;
 	String join_date;
+	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
 	public String getMemberId() {
 		return memeberId;
 	}

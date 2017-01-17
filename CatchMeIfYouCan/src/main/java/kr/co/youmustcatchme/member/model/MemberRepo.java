@@ -42,9 +42,9 @@ public class MemberRepo implements IMemberRepo {
 	}
 
 	public int insertMember(MemberVO member) {
-		String sql = "insert into catch_member values(?, ?, ?, ?, now())";
+		String sql = "insert into catch_member values(?, ?, ?, ?, ?, now())";
 		return jdbcTemplate.update(sql, member.getMemberId(), member.getPassword(),
-				member.getUserName(), member.getJob());
+				member.getUserName(), member.getEmail(), member.getJob());
 
 	}
 

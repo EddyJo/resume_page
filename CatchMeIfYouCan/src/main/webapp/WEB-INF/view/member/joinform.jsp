@@ -19,7 +19,10 @@
 		<div>
 			<input type="text" name="userName" id="username" placeholder="이름을 입력하세요.">
 		</div>
-		<div>	
+		<div>
+			<input type="text" name="email" id="email" placeholder="이메일을 입력하세요.">
+		</div>
+		<div>
 			<input type="text" name="job" id="job" placeholder="직업을 입력하세요.">
 		</div>
 		<div>

@@ -37,34 +37,70 @@
 
 </head>
 
-<body>
-<!-- 로그인 부분 -->
-<div>
-	<form action="<c:url value="/member/login.do"/>" method=post>
-		<input type="text" name="memberId" id="id" placeholder="아이디를 입력하세요.">
-		<input type="text" name="password" id="password" placeholder="비밀번호를 입력하세요."> 
-		<input type="submit" value="로그인">
-	</form>
-</div>
+<body id="page-top" class="index">
 
-<!-- 회원 리스트 -->
-<div>
-	<c:url value="/member/list.do" var="memberListUrl"/>
-	<a href="${memberListUrl}">회원 리스트</a>
-</div>
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">이력서 플랫폼</a>
+            </div>
 
-<!-- 회원 가입 -->
-<div>
-	<c:url value="/member/join.do" var="joinUrl"/>
-	<a href="${joinUrl}">회원가입</a>
-	${message}
-</div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <!-- 회원 가입 -->
+                    <li class="page-scroll">
+                   		<c:url value="/member/join.do" var="joinUrl"/>
+                        <a href="${joinUrl}">Sign In</a>
+                    </li>
+           			<!-- 로그인 페이지 -->
+                    <li class="page-scroll">
+                    	<c:url value="/member/login.do" var="loginUrl"/>
+                        <a href="${loginUrl}">Log In</a>
+                    </li>
+                    <!-- 유저 리스트 -->
+                    <c:url value="/member/list.do" var="memberListUrl"/>
+                    <li class="page-scroll">
+                        <a href="${memberListUrl}">UserList</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- Header -->
+    <header>
+    	<div class="container">
+    		${id}
+     		<c:url value="/portfolio/home.do" var="portfolHomeUrl"/>
+			<a href="${portfolHomeUrl}">포트폴리오 page</a>
+     	</div>
+    </header>
 
-<div>
-	<c:url value="/portfolio/home.do" var="portfolHomeUrl"/>
-	<a href="${portfolHomeUrl}">포트폴리오 page</a>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
 
-</div>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
 
 </body>
 </html>

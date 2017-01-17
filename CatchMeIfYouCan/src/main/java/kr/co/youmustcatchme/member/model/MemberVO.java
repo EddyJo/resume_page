@@ -1,12 +1,12 @@
 package kr.co.youmustcatchme.member.model;
 
 public class MemberVO {
-	String memeberId;
-	String password;
-	String userName;
-	String email;
-	String job;
-	String join_date;
+	private String memeberId;
+	private String password;
+	private String userName;
+	private String email;
+	private String job;
+	private String join_date;
 	
 	public String getEmail() {
 		return email;

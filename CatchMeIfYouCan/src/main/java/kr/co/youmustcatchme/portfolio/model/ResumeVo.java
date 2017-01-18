@@ -1,6 +1,6 @@
 package kr.co.youmustcatchme.portfolio.model;
 
-public class PortfolioVo {
+public class ResumeVo {
 	//지금은 텍스트 정보만 담았는데, 나중에는 이미지 바이너리, 파일 바이너리 정보를 담아야 한다.
 	private String memberId;
 	private String userName;

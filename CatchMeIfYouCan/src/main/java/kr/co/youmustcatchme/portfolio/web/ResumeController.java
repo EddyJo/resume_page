@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/portfolio")
-public class PortfolioController {
+public class ResumeController {
 	
 	@RequestMapping("/home.do")
 	public String goHome() {

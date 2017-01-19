@@ -83,8 +83,8 @@
     		${id}
      		<c:url value="/resume/home.do" var="portfolHomeUrl"/>
 			<a href="${portfolHomeUrl}">이력서 샘플 page</a>
-     		<c:url value="/resume/create_resume.do" var="createResumeUrl"/>
-			<a href="${createResumeUrl}">이력서 만들기</a>
+     		<c:url value="/resume/myresume.do" var="createResumeUrl"/>
+			<a href="${createResumeUrl}">내 이력서</a>
      	</div>
     </header>
 

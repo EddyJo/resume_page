@@ -19,7 +19,7 @@ import kr.co.youmustcatchme.member.service.MemeberService;
 
 
 @Controller
-@SessionAttributes("id")
+@SessionAttributes("memberId")
 @RequestMapping("/member")
 public class MemberController {
 	

@@ -667,6 +667,53 @@ public class ResumeVO {
 	public void setBlogUrl(String blogUrl) {
 		this.blogUrl = blogUrl;
 	}
+	@Override
+	public String toString() {
+		return "ResumeVO [memberId=" + memberId + ", userName=" + userName + ", email=" + email + ", job1=" + job1
+				+ ", job2=" + job2 + ", job3=" + job3 + ", phone=" + phone + ", age=" + age + ", address=" + address
+				+ ", skill1=" + skill1 + ", skill1Score=" + skill1Score + ", skill2=" + skill2 + ", skill2Score="
+				+ skill2Score + ", skill3=" + skill3 + ", skill3Score=" + skill3Score + ", skill4=" + skill4
+				+ ", skill4Score=" + skill4Score + ", skill5=" + skill5 + ", skill5Score=" + skill5Score + ", skill6="
+				+ skill6 + ", skill6Score=" + skill6Score + ", skill7=" + skill7 + ", skill7Score=" + skill7Score
+				+ ", skill8=" + skill8 + ", skill8Score=" + skill8Score + ", portfolio1Title=" + portfolio1Title
+				+ ", portfolio1Info=" + portfolio1Info + ", portfolio1SubTitle1=" + portfolio1SubTitle1
+				+ ", portfolio1SubTitle1Content=" + portfolio1SubTitle1Content + ", portfolio1SubTitle2="
+				+ portfolio1SubTitle2 + ", portfolio1SubTitle2Content=" + portfolio1SubTitle2Content
+				+ ", portfolio1SubTitle3=" + portfolio1SubTitle3 + ", portfolio1SubTitle3Content="
+				+ portfolio1SubTitle3Content + ", portfolio1Client=" + portfolio1Client + ", portfolio1Date="
+				+ portfolio1Date + ", portfolio1Service=" + portfolio1Service + ", portfolio2Title=" + portfolio2Title
+				+ ", portfolio2Info=" + portfolio2Info + ", portfolio2SubTitle1=" + portfolio2SubTitle1
+				+ ", portfolio2SubTitle1Content=" + portfolio2SubTitle1Content + ", portfolio2SubTitle2="
+				+ portfolio2SubTitle2 + ", portfolio2SubTitle2Content=" + portfolio2SubTitle2Content
+				+ ", portfolio2SubTitle3=" + portfolio2SubTitle3 + ", portfolio2SubTitle3Content="
+				+ portfolio2SubTitle3Content + ", portfolio2Client=" + portfolio2Client + ", portfolio2Date="
+				+ portfolio2Date + ", portfolio2Service=" + portfolio2Service + ", portfolio3Title=" + portfolio3Title
+				+ ", portfolio3Info=" + portfolio3Info + ", portfolio3SubTitle1=" + portfolio3SubTitle1
+				+ ", portfolio3SubTitle1Content=" + portfolio3SubTitle1Content + ", portfolio3SubTitle2="
+				+ portfolio3SubTitle2 + ", portfolio3SubTitle2Content=" + portfolio3SubTitle2Content
+				+ ", portfolio3SubTitle3=" + portfolio3SubTitle3 + ", portfolio3SubTitle3Content="
+				+ portfolio3SubTitle3Content + ", portfolio3Client=" + portfolio3Client + ", portfolio3Date="
+				+ portfolio3Date + ", portfolio3Service=" + portfolio3Service + ", portfolio4Title=" + portfolio4Title
+				+ ", portfolio4Info=" + portfolio4Info + ", portfolio4SubTitle1=" + portfolio4SubTitle1
+				+ ", portfolio4SubTitle1Content=" + portfolio4SubTitle1Content + ", portfolio4SubTitle2="
+				+ portfolio4SubTitle2 + ", portfolio4SubTitle2Content=" + portfolio4SubTitle2Content
+				+ ", portfolio4SubTitle3=" + portfolio4SubTitle3 + ", portfolio4SubTitle3Content="
+				+ portfolio4SubTitle3Content + ", portfolio4Client=" + portfolio4Client + ", portfolio4Date="
+				+ portfolio4Date + ", portfolio4Service=" + portfolio4Service + ", portfolio5Title=" + portfolio5Title
+				+ ", portfolio5Info=" + portfolio5Info + ", portfolio5SubTitle1=" + portfolio5SubTitle1
+				+ ", portfolio5SubTitle1Content=" + portfolio5SubTitle1Content + ", portfolio5SubTitle2="
+				+ portfolio5SubTitle2 + ", portfolio5SubTitle2Content=" + portfolio5SubTitle2Content
+				+ ", portfolio5SubTitle3=" + portfolio5SubTitle3 + ", portfolio5SubTitle3Content="
+				+ portfolio5SubTitle3Content + ", portfolio5Client=" + portfolio5Client + ", portfolio5Date="
+				+ portfolio5Date + ", portfolio5Service=" + portfolio5Service + ", portfolio6Title=" + portfolio6Title
+				+ ", portfolio6Info=" + portfolio6Info + ", portfolio6SubTitle1=" + portfolio6SubTitle1
+				+ ", portfolio6SubTitle1Content=" + portfolio6SubTitle1Content + ", portfolio6SubTitle2="
+				+ portfolio6SubTitle2 + ", portfolio6SubTitle2Content=" + portfolio6SubTitle2Content
+				+ ", portfolio6SubTitle3=" + portfolio6SubTitle3 + ", portfolio6SubTitle3Content="
+				+ portfolio6SubTitle3Content + ", portfolio6Client=" + portfolio6Client + ", portfolio6Date="
+				+ portfolio6Date + ", portfolio6Service=" + portfolio6Service + ", aboutMe=" + aboutMe
+				+ ", linkedinUrl=" + linkedinUrl + ", githubUrl=" + githubUrl + ", blogUrl=" + blogUrl + "]";
+	}
 	
 	
 	

@@ -1,6 +1,6 @@
 package kr.co.youmustcatchme.portfolio.model;
 
-public class ResumeVo {
+public class ResumeVO {
 	//지금은 텍스트 정보만 담았는데, 나중에는 이미지 바이너리, 파일 바이너리 정보를 담아야 한다.
 	private String memberId;
 	private String userName;
@@ -94,7 +94,7 @@ public class ResumeVo {
 	private String portfolio6Date;
 	private String portfolio6Service;
 	private String aboutMe;
-	private String likedinUrl;
+	private String linkedinUrl;
 	private String githubUrl;
 	private String blogUrl;
 	public String getMemberId() {
@@ -649,11 +649,11 @@ public class ResumeVo {
 	public void setAboutMe(String aboutMe) {
 		this.aboutMe = aboutMe;
 	}
-	public String getLikedinUrl() {
-		return likedinUrl;
+	public String getLinkedinUrl() {
+		return linkedinUrl;
 	}
-	public void setLikedinUrl(String likedinUrl) {
-		this.likedinUrl = likedinUrl;
+	public void setLinkedinUrl(String likedinUrl) {
+		this.linkedinUrl = likedinUrl;
 	}
 	public String getGithubUrl() {
 		return githubUrl;

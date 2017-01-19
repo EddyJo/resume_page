@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.co.youmustcatchme.portfolio.model.mapper.IResumeRepo">
+
+<resultMap id="resumeMap" type="kr.co.youmustcatchme.portfolio.model.ResumeVO">
+	<!-- 기본정보 -->
+	<result property="memberId" column = "member_id"/>
+	<result property="userName" column = "username"/>
+	<result property="email" column = "email"/>
+	<result property="job1" column = "job_1"/>
+	<result property="job2" column = "job_2"/>
+	<result property="job3" column = "job_3"/>
+	<result property="phone" column = "phone"/>
+	<result property="age" column = "age"/>
+	<result property="address" column = "address"/>
+	
+	<!-- 기술 Stack -->
+	<result property="skill1" column = "skill_1"/>
+	<result property="skill1Score" column = "skill_1_score"/>
+	<result property="skill2" column = "skill_2"/>
+	<result property="skill2Score" column = "skill_2_score"/>
+	<result property="skill3" column = "skill_3"/>
+	<result property="skill3Score" column = "skill_3_score"/>
+	<result property="skill4" column = "skill_4"/>
+	<result property="skill4Score" column = "skill_4_score"/>
+	<result property="skill5" column = "skill_5"/>
+	<result property="skill5Score" column = "skill_5_score"/>
+	<result property="skill6" column = "skill_6"/>
+	<result property="skill6Score" column = "skill_6_score"/>
+	<result property="skill7" column = "skill_7"/>
+	<result property="skill7Score" column = "skill_7_score"/>
+	<result property="skill8" column = "skill_8"/>
+	<result property="skill8Score" column = "skill_8_score"/>
+	<result property="skill6" column = "skill_6"/>
+	
+	<!-- 포트폴리오_1 -->
+	<result property="portfolio1Title" column = "portfolio_1_title"/>
+	<result property="portfolio1Info" column = "portfolio_1_info"/>
+	<result property="portfolio1SubTitle1" column = "portfolio_1_sub_title_1"/>
+	<result property="portfolio1SubTitle1Content" column = "portfolio_1_sub_title_1_content"/>
+	<result property="portfolio1SubTitle2" column = "portfolio_1_sub_title_2"/>
+	<result property="portfolio1SubTitle2Content" column = "portfolio_1_sub_title_2_content"/>
+	<result property="portfolio1SubTitle3" column = "portfolio_1_sub_title_3"/>
+	<result property="portfolio1SubTitle3Content" column = "portfolio_1_sub_title_3_content"/>
+	<result property="portfolio1Client" column = "portfolio_1_Client"/>
+	<result property="portfolio1Date" column = "portfolio_1_date"/>
+	<result property="portfolio1Service" column = "portfolio_1_service"/>
+	
+	<!-- 포트폴리오_2 -->
+	<result property="portfolio2Title" column = "portfolio_2_title"/>
+	<result property="portfolio2Info" column = "portfolio_2_info"/>
+	<result property="portfolio2SubTitle1" column = "portfolio_2_sub_title_1"/>
+	<result property="portfolio2SubTitle1Content" column = "portfolio_2_sub_title_1_content"/>
+	<result property="portfolio2SubTitle2" column = "portfolio_2_sub_title_2"/>
+	<result property="portfolio2SubTitle2Content" column = "portfolio_2_sub_title_2_content"/>
+	<result property="portfolio2SubTitle3" column = "portfolio_2_sub_title_3"/>
+	<result property="portfolio2SubTitle3Content" column = "portfolio_2_sub_title_3_content"/>
+	<result property="portfolio2Client" column = "portfolio_2_Client"/>
+	<result property="portfolio2Date" column = "portfolio_2_date"/>
+	<result property="portfolio2Service" column = "portfolio_2_service"/>
+	
+	<!-- 포트폴리오_3 -->
+	<result property="portfolio3Title" column = "portfolio_3_title"/>
+	<result property="portfolio3Info" column = "portfolio_3_info"/>
+	<result property="portfolio3SubTitle1" column = "portfolio_3_sub_title_1"/>
+	<result property="portfolio3SubTitle1Content" column = "portfolio_3_sub_title_1_content"/>
+	<result property="portfolio3SubTitle2" column = "portfolio_3_sub_title_2"/>
+	<result property="portfolio3SubTitle2Content" column = "portfolio_3_sub_title_2_content"/>
+	<result property="portfolio3SubTitle3" column = "portfolio_3_sub_title_3"/>
+	<result property="portfolio3SubTitle3Content" column = "portfolio_3_sub_title_3_content"/>
+	<result property="portfolio3Client" column = "portfolio_3_Client"/>
+	<result property="portfolio3Date" column = "portfolio_3_date"/>
+	<result property="portfolio3Service" column = "portfolio_3_service"/>
+	
+	<!-- 포트폴리오_4 -->
+	<result property="portfolio4Title" column = "portfolio_4_title"/>
+	<result property="portfolio4Info" column = "portfolio_4_info"/>
+	<result property="portfolio4SubTitle1" column = "portfolio_4_sub_title_1"/>
+	<result property="portfolio4SubTitle1Content" column = "portfolio_4_sub_title_1_content"/>
+	<result property="portfolio4SubTitle2" column = "portfolio_4_sub_title_2"/>
+	<result property="portfolio4SubTitle2Content" column = "portfolio_4_sub_title_2_content"/>
+	<result property="portfolio4SubTitle3" column = "portfolio_4_sub_title_3"/>
+	<result property="portfolio4SubTitle3Content" column = "portfolio_4_sub_title_3_content"/>
+	<result property="portfolio4Client" column = "portfolio_4_Client"/>
+	<result property="portfolio4Date" column = "portfolio_4_date"/>
+	<result property="portfolio4Service" column = "portfolio_4_service"/>
+	
+	<!-- 포트폴리오_5 -->
+	<result property="portfolio5Title" column = "portfolio_5_title"/>
+	<result property="portfolio5Info" column = "portfolio_5_info"/>
+	<result property="portfolio5SubTitle1" column = "portfolio_5_sub_title_1"/>
+	<result property="portfolio5SubTitle1Content" column = "portfolio_5_sub_title_1_content"/>
+	<result property="portfolio5SubTitle2" column = "portfolio_5_sub_title_2"/>
+	<result property="portfolio5SubTitle2Content" column = "portfolio_5_sub_title_2_content"/>
+	<result property="portfolio5SubTitle3" column = "portfolio_5_sub_title_3"/>
+	<result property="portfolio5SubTitle3Content" column = "portfolio_5_sub_title_3_content"/>
+	<result property="portfolio5Client" column = "portfolio_5_Client"/>
+	<result property="portfolio5Date" column = "portfolio_5_date"/>
+	<result property="portfolio5Service" column = "portfolio_5_service"/>
+	
+	<!-- 포트폴리오_6 -->
+	<result property="portfolio6Title" column = "portfolio_6_title"/>
+	<result property="portfolio6Info" column = "portfolio_6_info"/>
+	<result property="portfolio6SubTitle1" column = "portfolio_6_sub_title_1"/>
+	<result property="portfolio6SubTitle1Content" column = "portfolio_6_sub_title_1_content"/>
+	<result property="portfolio6SubTitle2" column = "portfolio_6_sub_title_2"/>
+	<result property="portfolio6SubTitle2Content" column = "portfolio_6_sub_title_2_content"/>
+	<result property="portfolio6SubTitle3" column = "portfolio_6_sub_title_3"/>
+	<result property="portfolio6SubTitle3Content" column = "portfolio_6_sub_title_3_content"/>
+	<result property="portfolio6Client" column = "portfolio_6_Client"/>
+	<result property="portfolio6Date" column = "portfolio_6_date"/>
+	<result property="portfolio6Service" column = "portfolio_6_service"/>
+	
+	<!-- aboutme -->
+	<result property="aboutMe" column = "aboutme"/>
+	
+	<!-- urls -->
+	<result property="linkedinUrl" column = "linkedin_url"/>
+	<result property="githubUrl" column = "github_url"/>
+	<result property="blogUrl" column = "blog_url"/>
+	
+</resultMap>
+
+<!-- insert  -->
+<insert id="inserResume" parameterType="kr.co.youmustcatchme.portfolio.model.ResumeVO">
+	Insert into resume_info (member_id, username, age, job_1, job_2, job_3, 
+							phone, email, address, skill_1, skill_1_score, 
+							skill_2, skill_2_score, skill_3, skill_3_score, 
+							skill_4, skill_4_score, skill_5, skill_5_score, 
+							skill_6, skill_6_score, skill_7, skill_7_score,
+							skill_8, skill_8_score,
+							portfolio_1_title, portfolio_1_info, 
+							portfolio_1_sub_title_1, portfolio_1_sub_title_1_content,
+							portfolio_1_sub_title_2, portfolio_1_sub_title_2_content,
+							portfolio_1_sub_title_3, portfolio_1_sub_title_3_content,
+							portfolio_1_client, portfolio_1_date, portfolio_1_service, 
+							portfolio_2_title, portfolio_2_info, 
+							portfolio_2_sub_title_1, portfolio_2_sub_title_1_content,
+							portfolio_2_sub_title_2, portfolio_2_sub_title_2_content,
+							portfolio_2_sub_title_3, portfolio_2_sub_title_3_content,
+							portfolio_2_client, portfolio_2_date, portfolio_2_service, 
+							portfolio_3_title, portfolio_3_info, 
+							portfolio_3_sub_title_1, portfolio_3_sub_title_1_content,
+							portfolio_3_sub_title_2, portfolio_3_sub_title_2_content,
+							portfolio_3_sub_title_3, portfolio_3_sub_title_3_content,
+							portfolio_3_client, portfolio_3_date, portfolio_3_service, 
+							portfolio_4_title, portfolio_4_info, 
+							portfolio_4_sub_title_1, portfolio_4_sub_title_1_content,
+							portfolio_4_sub_title_2, portfolio_4_sub_title_2_content,
+							portfolio_4_sub_title_3, portfolio_4_sub_title_3_content,
+							portfolio_4_client, portfolio_4_date, portfolio_4_service, 
+							portfolio_5_title, portfolio_2_info, 
+							portfolio_5_sub_title_1, portfolio_5_sub_title_1_content,
+							portfolio_5_sub_title_2, portfolio_5_sub_title_2_content,
+							portfolio_5_sub_title_3, portfolio_5_sub_title_3_content,
+							portfolio_5_client, portfolio_5_date, portfolio_5_service, 
+							portfolio_6_title, portfolio_6_info, 
+							portfolio_6_sub_title_1, portfolio_6_sub_title_1_content,
+							portfolio_6_sub_title_2, portfolio_6_sub_title_2_content,
+							portfolio_6_sub_title_3, portfolio_6_sub_title_3_content,
+							portfolio_6_client, portfolio_6_date, portfolio_6_service,
+							aboutme, linkedin_url, github_url, blog_url)
+					values
+							(#{memberId}, #{userName}, #{age}, #{job1},
+							#{job2}, #{job3}, #{phone}, #{email}, #{address}, 
+							#{skill1}, #{skill1Score}, #{skill2}, #{skill2Score},
+							#{skill3}, #{skill3Score}, #{skill4}, #{skill4Score},
+							#{skill5}, #{skill5Score}, #{skill6}, #{skill6Score},
+							#{skill7}, #{skill7Score}, #{skill8}, #{skill8Score},
+							#{portfolio1Title}, #{portfolio1Info}, #{portfolio1SubTitle1},
+							#{portfolio1SubTitle1Content}, #{portfolio1SubTitle2},
+							#{portfolio1SubTitle2Content}, #{portfolio1SubTitle3},
+							#{portfolio1SubTitle3Content}, #{portfolio1Client},
+							#{portfolio1Date}, #{portfolio1Service},
+							#{portfolio2Title}, #{portfolio2Info}, #{portfolio2SubTitle1},
+							#{portfolio2SubTitle1Content}, #{portfolio2SubTitle2},
+							#{portfolio2SubTitle2Content}, #{portfolio2SubTitle3},
+							#{portfolio2SubTitle3Content}, #{portfolio2Client},
+							#{portfolio2Date}, #{portfolio2Service},
+							#{portfolio3Title}, #{portfolio3Info}, #{portfolio3SubTitle1},
+							#{portfolio3SubTitle1Content}, #{portfolio3SubTitle2},
+							#{portfolio3SubTitle2Content}, #{portfolio3SubTitle3},
+							#{portfolio3SubTitle3Content}, #{portfolio3Client},
+							#{portfolio3Date}, #{portfolio3Service},
+							#{portfolio4Title}, #{portfolio4Info}, #{portfolio4SubTitle1},
+							#{portfolio4SubTitle1Content}, #{portfolio4SubTitle2},
+							#{portfolio4SubTitle2Content}, #{portfolio4SubTitle3},
+							#{portfolio4SubTitle3Content}, #{portfolio4Client},
+							#{portfolio4Date}, #{portfolio4Service},
+							#{portfolio5Title}, #{portfolio5Info}, #{portfolio5SubTitle1},
+							#{portfolio5SubTitle1Content}, #{portfolio5SubTitle2},
+							#{portfolio5SubTitle2Content}, #{portfolio5SubTitle3},
+							#{portfolio5SubTitle3Content}, #{portfolio5Client},
+							#{portfolio5Date}, #{portfolio5Service},
+							#{portfolio6Title}, #{portfolio6Info}, #{portfolio6SubTitle1},
+							#{portfolio6SubTitle1Content}, #{portfolio6SubTitle2},
+							#{portfolio6SubTitle2Content}, #{portfolio6SubTitle3},
+							#{portfolio6SubTitle3Content}, #{portfolio6Client},
+							#{portfolio6Date}, #{portfolio6Service},
+							#{aboutMe}, #{linkedinUrl}, #{githubUrl}, #{blogUrl}
+							)
+</insert>
+
+</mapper>

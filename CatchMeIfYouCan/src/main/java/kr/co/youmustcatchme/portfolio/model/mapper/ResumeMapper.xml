@@ -207,21 +207,43 @@
 </insert>
 
 <!-- select -->
-<select id="selectResume" parameterType="String"  resultType="kr.co.youmustcatchme.portfolio.model.ResumeVO">
-	Select member_id, username, age, job_1, job_2, job_3, 
-							phone, email, address, skill_1, skill_1_score, 
-							skill_2, skill_2_score, skill_3, skill_3_score, 
-							skill_4, skill_4_score, skill_5, skill_5_score, 
-							skill_6, skill_6_score, skill_7, skill_7_score,
-							skill_8, skill_8_score,
-							portfolio_1_title, 
-							portfolio_1_sub_title_1,
-							portfolio_1_sub_title_2, 
-							portfolio_1_sub_title_3,
-							portfolio_1_client, portfolio_1_date, portfolio_1_service,
-							linkedin_url, github_url, blog_url
-				 from resume_info
-				 where member_id = #{memberId}
+<select id="selectResume" parameterType="String" resultMap="resumeMap">
+	Select member_id, 
+		   username, 
+		   age, 
+		   job_1, 
+		   job_2, 
+		   job_3, 
+		   phone, 
+		   email, 
+		   address, 
+		   skill_1, 
+		   skill_1_score, 
+		   skill_2, 
+		   skill_2_score, 
+		   skill_3, 
+		   skill_3_score, 
+		   skill_4, 
+		   skill_4_score, 
+		   skill_5, 
+		   skill_5_score, 
+		   skill_6, 
+		   skill_6_score, 
+		   skill_7, 
+		   skill_7_score,
+		   skill_8, skill_8_score,
+		   portfolio_1_title, 
+		   portfolio_1_sub_title_1,
+		   portfolio_1_sub_title_2, 
+		   portfolio_1_sub_title_3,
+		   portfolio_1_client, 
+		   portfolio_1_date, 
+		   portfolio_1_service,
+		   linkedin_url, 
+		   github_url, 
+		   blog_url
+	  from resume_info
+     where member_id = #{memberId}
 </select>
 
 </mapper>

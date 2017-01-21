@@ -481,11 +481,11 @@
                             <p class=portfolio-info>${resume.getPortfolio1Info()}
                             <br>
                             <br>                        
-                             ${resume.getPortfolio1SubTitle1()}: <a>Java, SQL, HTML</a>
+                             ${resume.getPortfolio1SubTitle1()}: <a>${resume.getPortfolio1SubTitle1Content()}</a>
 							<br>
-							${resume.getPortfolio1SubTitle2()}: <a>Windows 10 Home, Oracle 11g express, Apache Tomcat 8.0.36</a>
+							${resume.getPortfolio1SubTitle2()}: <a>${resume.getPortfolio1SubTitle2Content()}</a>
 							<br>
-							${resume.getPortfolio1SubTitle3()}: <a>JDBC를 이용한 궁합도 분석 프로그래밍, 차트API를 이용한 분석차트</a>
+							${resume.getPortfolio1SubTitle3()}: <a>${resume.getPortfolio1SubTitle3Content()}</a>
                             </p>
                             <ul class="list-inline item-details">
                                 <li>Client:<a>${resume.getPortfolio1Client()}</a>

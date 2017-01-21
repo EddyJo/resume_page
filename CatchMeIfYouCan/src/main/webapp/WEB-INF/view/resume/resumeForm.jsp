@@ -87,22 +87,22 @@
      			<div class='detail'>${resume.getPhone()}</div>
      			<br>
      			<div class="label">Email</div>
-     			<div class='detail'>jkjk3307@naver.com</div>
+     			<div class='detail'>${resume.getEmail()}</div>
      			<br>
-     			<div class="label">Adress</div>
-     			<div class='detail'>서울특별시 동대문구</div>
+     			<div class="label">Address</div>
+     			<div class='detail'>${resume.getAddress()}</div>
 			</div>
      		<div class="links">
 					<ul class="list-inline">
 						<li><a
-							href="https://www.linkedin.com/in/kyeong-hyeon-jo-b31961127?trk=nav_responsive_tab_profile"
+							href="<c:url value='http://${resume.getLinkedinUrl()}'/>"
 							class="btn-social-info btn-outline-info"> <i
 								class="fa fa-fw fa-linkedin"></i>
 						</a></li>
-						<li><a href="https://github.com/EddyJo"
+						<li><a href="<c:url value='http://${resume.getGithubUrl()}'/>"
 							class="btn-social-info btn-outline-info"> <i class="fa fa-fw fa-github"></i>
 						</a></li>
-						<li><a href="http://eddyplusit.tistory.com/"
+						<li><a href="http://${resume.getBlogUrl()}"
 							class="btn-social-info btn-outline-info"> <i class="fa fa-fw fa-blog"></i>
 						</a></li>
 					</ul>
@@ -124,15 +124,15 @@
 								<div class=skill-set>
 									<div class=skill>
 										<p>
-											<span class=skill-item>Java</span> 
-											<span class=skill-value>80%</span>
+											<span class=skill-item>${resume.getSkill1()}</span> 
+											<span class=skill-value>${resume.getSkill1Score()}%</span>
 										</p>
 									</div>
 									<div>
 										<div class=progress>
 											<div class="progress-bar" role="progressbar"
 												aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-												style="width: 80%;">
+												style="width: ${resume.getSkill1Score()}%;">
 											</div>
 										</div>
 									</div>
@@ -140,15 +140,15 @@
 								<div class=skill-set>
 									<div class=skill>
 										<p>
-											<span class=skill-item>Python</span> 
-											<span class=skill-value>80%</span>
+											<span class=skill-item>${resume.getSkill2()}</span> 
+											<span class=skill-value>${resume.getSkill2Score()}%</span>
 										</p>
 									</div>
 									<div>
 										<div class=progress>
 											<div class="progress-bar" role="progressbar"
 												aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-												style="width: 80%;">
+												style="width: ${resume.getSkill2Score()}%;">
 											</div>
 										</div>
 									</div>
@@ -156,15 +156,15 @@
 								<div class=skill-set>
 									<div class=skill>
 										<p>
-											<span class=skill-item>R</span> 
-											<span class=skill-value>80%</span>
+											<span class=skill-item>${resume.getSkill3()}</span> 
+											<span class=skill-value>${resume.getSkill3Score()}%</span>
 										</p>
 									</div>
 									<div>
 										<div class=progress>
 											<div class="progress-bar" role="progressbar"
 												aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-												style="width: 80%;">
+												style="width: ${resume.getSkill3Score()}%;">
 											</div>
 										</div>
 									</div>
@@ -172,15 +172,15 @@
 								<div class=skill-set>
 									<div class=skill>
 										<p>
-											<span class=skill-item>SQL</span> 
-											<span class=skill-value>80%</span>
+											<span class=skill-item>${resume.getSkill4()}</span> 
+											<span class=skill-value>${resume.getSkill4Score()}%</span>
 										</p>
 									</div>
 									<div>
 										<div class=progress>
 											<div class="progress-bar" role="progressbar"
 												aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-												style="width: 80%;">
+												style="width: ${resume.getSkill4Score()}%;">
 											</div>
 										</div>
 									</div>
@@ -190,15 +190,15 @@
 							<div class=skill-set>
 									<div class=skill>
 										<p>
-											<span class=skill-item>Spring</span> 
-											<span class=skill-value>70%</span>
+											<span class=skill-item>${resume.getSkill5()}</span> 
+											<span class=skill-value>${resume.getSkill5Score()}%</span>
 										</p>
 									</div>
 									<div>
 										<div class=progress>
 											<div class="progress-bar" role="progressbar"
 												aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-												style="width: 70%;">
+												style="width: ${resume.getSkill5Score()}%;">
 											</div>
 										</div>
 									</div>
@@ -206,15 +206,15 @@
 								<div class=skill-set>
 									<div class=skill>
 										<p>
-											<span class=skill-item>HTML</span> 
-											<span class=skill-value>50%</span>
+											<span class=skill-item>${resume.getSkill6()}</span> 
+											<span class=skill-value>${resume.getSkill6Score()}%</span>
 										</p>
 									</div>
 									<div>
 										<div class=progress>
 											<div class="progress-bar" role="progressbar"
 												aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-												style="width: 50%;">
+												style="width: ${resume.getSkill6Score()}%;">
 											</div>
 										</div>
 									</div>
@@ -222,15 +222,15 @@
 								<div class=skill-set>
 									<div class=skill>
 										<p>
-											<span class=skill-item>CSS</span> 
-											<span class=skill-value>50%</span>
+											<span class=skill-item>${resume.getSkill7()}</span> 
+											<span class=skill-value>${resume.getSkill7Score()}%</span>
 										</p>
 									</div>
 									<div>
 										<div class=progress>
 											<div class="progress-bar" role="progressbar"
 												aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-												style="width: 50%;">
+												style="width: ${resume.getSkill7Score()}%;">
 											</div>
 										</div>
 									</div>
@@ -238,15 +238,15 @@
 								<div class=skill-set>
 									<div class=skill>
 										<p>
-											<span class=skill-item>JQuery</span> 
-											<span class=skill-value>50%</span>
+											<span class=skill-item>${resume.getSkill8()}</span> 
+											<span class=skill-value>${resume.getSkill8Score()}%</span>
 										</p>
 									</div>
 									<div>
 										<div class=progress>
 											<div class="progress-bar" role="progressbar"
 												aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-												style="width: 50%;">
+												style="width: ${resume.getSkill8Score()}%;">
 											</div>
 										</div>
 									</div>
@@ -475,24 +475,24 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>JDBC를 이용한 웹어플리케이션</h2>
+                            <h2>${resume.getPortfolio1Title()}</h2>
                             <hr class="line">
                             <img src="${pageContext.request.contextPath}/img/portfolio/약빵.JPG" class="img-responsive img-centered" alt="">
-                            <p class=portfolio-info>식품과 약품의 궁합도를 알려주는 웹어플리케이션입니다. 간편한 검색, 알아보기 쉬운 검색 UI로 사용자의 편의를 증진시킵니다.
+                            <p class=portfolio-info>${resume.getPortfolio1Info()}
                             <br>
                             <br>                        
-                                                    사용 언어: <a>Java, SQL, HTML</a>
+                             ${resume.getPortfolio1SubTitle1()}: <a>Java, SQL, HTML</a>
 							<br>
-							OS 및 DB: <a>Windows 10 Home, Oracle 11g express, Apache Tomcat 8.0.36</a>
+							${resume.getPortfolio1SubTitle2()}: <a>Windows 10 Home, Oracle 11g express, Apache Tomcat 8.0.36</a>
 							<br>
-							담당 업무: <a>JDBC를 이용한 궁합도 분석 프로그래밍, 차트API를 이용한 분석차트</a>
+							${resume.getPortfolio1SubTitle3()}: <a>JDBC를 이용한 궁합도 분석 프로그래밍, 차트API를 이용한 분석차트</a>
                             </p>
                             <ul class="list-inline item-details">
-                                <li>Client:<a>글로벌 SW공모대전</a>
+                                <li>Client:<a>${resume.getPortfolio1Client()}</a>
                                 </li>
-                                <li>Date: <a>2016.09</a>
+                                <li>Date: <a>${resume.getPortfolio1Date()}</a>
                                 </li>
-                                <li>Service: <a>Web develoment</a>
+                                <li>Service: <a>${resume.getPortfolio1Service()}</a>
                                 </li>
 
                             </ul>

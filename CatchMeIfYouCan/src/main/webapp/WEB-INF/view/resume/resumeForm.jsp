@@ -75,7 +75,7 @@
     <!-- Header -->
     <header>
     	<div class="container">
-     		<img class="imgg" src="${pageContext.request.contextPath}/img/profile.jpg" alt="">
+     		<img class="imgg" src="${pageContext.request.contextPath}${resume.getProfileImgPath()}" alt="">
      		<div class="info">
      			<h1 class="myname">${resume.getUserName()}</h1>
      			<div class="job"> ${resume.getJob1()}, ${resume.getJob2()}, ${resume.getJob3()}</div>
@@ -515,27 +515,26 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>머신러닝을 활용한 보험사기자 예측</h2>
+                            <h2>${resume.getPortfolio2Title()}</h2>
                             <hr class="line">
                             <img src="${pageContext.request.contextPath}/img/portfolio/fraud.JPG" class="img-responsive img-centered" alt="">
 							<p class=portfolio-info>
-								Xgboost와 SVM알고리즘을 이용해 보험사기자를 예측하여 precision 0.78과 recall 0.5의
-								결과를 냈습니다. 총 5개의 테이블을 전처리부터 파생변수 생성, 모델링, 평가와 같은 KDD process 과정을
-								거쳐 프로젝트를 수행하였습니다. 
-								<br> <br> 
-								사용 언어: <a>SQL, R</a> <br>
-								분석환경: <a>Rstudio, SQLdeveloper </a> 
+								${resume.getPortfolio2Info()}
+								<br>
 								<br> 
-								담당 업무: <a>데이터전처리, 파생변수 생성, 모델링, 평가</a>
+								${resume.getPortfolio2SubTitle1()}: <a>${resume.getPortfolio2SubTitle1Content()}</a> <br>
+								${resume.getPortfolio2SubTitle2()}: <a>${resume.getPortfolio2SubTitle2Content()}</a> 
+								<br> 
+								${resume.getPortfolio2SubTitle3()}: <a>${resume.getPortfolio2SubTitle3Content()}</a>
 							</p>
 							<ul class="list-inline item-details">
-                            	<li>Client:<a>빅콘테스트</a>
+                            	<li>Client:<a>${resume.getPortfolio2Client()}</a>
                                 </li>
-                                <li>Date: <a>2016.11</a>
+                                <li>Date: <a>${resume.getPortfolio2Date()}</a>
                                 </li>
-                                <li>Service: <a>data analysis</a>
+                                <li>Service: <a>${resume.getPortfolio2Service()}</a>
                                 </li>
-                                </li>
+                 
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>

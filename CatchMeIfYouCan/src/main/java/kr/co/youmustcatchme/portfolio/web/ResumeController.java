@@ -26,18 +26,20 @@ public class ResumeController {
 		return "resume/home";
 	}
 	
-	@RequestMapping(value="/update.do", method=RequestMethod.POST)
-	public String updateResume(ResumeVO resume, RedirectAttributes redirectAttrs) {
-		return "redirect:/";
+	@RequestMapping(value="/update.do", method=RequestMethod.GET)
+	public String updateResume(Model model) {
+		return "/";
 	}
 	
-	@RequestMapping(value="/myresume.do", method=RequestMethod.GET)
+	@RequestMapping(value="/myresume.do")
 	public String createResume(@ModelAttribute("id") String id,
 			Model model, RedirectAttributes redirectAttrs) {
+		
 		//회원 아이디로 이력서를 검색하여 이력서가 있는지 없는지 확인
 		String memberId = id;
 		ResumeVO resume = resumeRepo.selectResume(memberId);
 		System.out.println(memberId);
+		
 		//없으면 회원아이디로 새로 만들기(샐플데이터)
 		//있으면 기존 회원아이디의 이력서 정보 불러오기(이 코드는 이미 위에서
 		if(resume == null) {

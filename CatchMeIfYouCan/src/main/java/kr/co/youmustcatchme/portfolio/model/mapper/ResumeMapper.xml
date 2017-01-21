@@ -6,6 +6,7 @@
 <resultMap id="resumeMap" type="kr.co.youmustcatchme.portfolio.model.ResumeVO">
 	<!-- 기본정보 -->
 	<result property="memberId" column = "member_id"/>
+	<result property="profileImgPath" column = "profile_img_path"/>
 	<result property="userName" column = "username"/>
 	<result property="email" column = "email"/>
 	<result property="job1" column = "job_1"/>
@@ -208,7 +209,8 @@
 
 <!-- select -->
 <select id="selectResume" parameterType="String" resultMap="resumeMap">
-	Select member_id, 
+	Select member_id,
+		   profile_img_path,
 		   username, 
 		   age, 
 		   job_1, 

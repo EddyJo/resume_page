@@ -28,6 +28,12 @@ public class ResumeVO {
 	private int skill7Score;
 	private String skill8;
 	private int skill8Score;
+	private String portfolio1ImgPath;
+	private String portfolio2ImgPath;
+	private String portfolio3ImgPath;
+	private String portfolio4ImgPath;
+	private String portfolio5ImgPath;
+	private String portfolio6ImgPath;
 	private String portfolio1Title;
 	private String portfolio1Info;
 	private String portfolio1SubTitle1;
@@ -254,6 +260,42 @@ public class ResumeVO {
 	}
 	public void setSkill8Score(int skill8Score) {
 		this.skill8Score = skill8Score;
+	}
+	public String getPortfolio1ImgPath() {
+		return portfolio1ImgPath;
+	}
+	public void setPortfolio1ImgPath(String portfolio1ImgPath) {
+		this.portfolio1ImgPath = portfolio1ImgPath;
+	}
+	public String getPortfolio2ImgPath() {
+		return portfolio2ImgPath;
+	}
+	public void setPortfolio2ImgPath(String portfolio2ImgPath) {
+		this.portfolio2ImgPath = portfolio2ImgPath;
+	}
+	public String getPortfolio3ImgPath() {
+		return portfolio3ImgPath;
+	}
+	public void setPortfolio3ImgPath(String portfolio3ImgPath) {
+		this.portfolio3ImgPath = portfolio3ImgPath;
+	}
+	public String getPortfolio4ImgPath() {
+		return portfolio4ImgPath;
+	}
+	public void setPortfolio4ImgPath(String portfolio4ImgPath) {
+		this.portfolio4ImgPath = portfolio4ImgPath;
+	}
+	public String getPortfolio5ImgPath() {
+		return portfolio5ImgPath;
+	}
+	public void setPortfolio5ImgPath(String portfolio5ImgPath) {
+		this.portfolio5ImgPath = portfolio5ImgPath;
+	}
+	public String getPortfolio6ImgPath() {
+		return portfolio6ImgPath;
+	}
+	public void setPortfolio6ImgPath(String portfolio6ImgPath) {
+		this.portfolio6ImgPath = portfolio6ImgPath;
 	}
 	public String getPortfolio1Title() {
 		return portfolio1Title;

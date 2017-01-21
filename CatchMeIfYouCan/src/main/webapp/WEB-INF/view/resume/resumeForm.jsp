@@ -276,7 +276,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="${pageContext.request.contextPath}/img/portfolio/약빵.JPG" class="img-responsive" alt="">
+                        <img src="${pageContext.request.contextPath}${resume.getPortfolio1ImgPath()}" class="img-responsive" alt="" width=900 height=650>
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -286,7 +286,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="${pageContext.request.contextPath}/img/portfolio/fraud.JPG" class="img-responsive" alt="">
+                        <img src="${pageContext.request.contextPath}${resume.getPortfolio2ImgPath()}" class="img-responsive" alt="" width=900 height=650>
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -296,7 +296,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="${pageContext.request.contextPath}/img/portfolio/홈페이지.JPG" class="img-responsive" alt="">
+                        <img src="${pageContext.request.contextPath}${resume.getPortfolio3ImgPath()}" class="img-responsive" alt="" width=900 height=650>
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -306,7 +306,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="${pageContext.request.contextPath}/img/portfolio/nba.jpg" class="img-responsive" alt="">
+                        <img src="${pageContext.request.contextPath}${resume.getPortfolio4ImgPath()}" class="img-responsive" alt="" width=900 height=650>
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -316,7 +316,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="${pageContext.request.contextPath}/img/portfolio/commingsoon3.png" class="img-responsive" alt="">
+                        <img src="${pageContext.request.contextPath}${resume.getPortfolio5ImgPath()}" class="img-responsive" alt="" width=900 height=650>
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -326,7 +326,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="${pageContext.request.contextPath}/img/portfolio/commingsoon3.png" class="img-responsive" alt="">
+                        <img src="${pageContext.request.contextPath}${resume.getPortfolio6ImgPath()}" class="img-responsive" alt="" width=900 height=650>
                     </a>
                 </div>
             </div>
@@ -670,7 +670,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img src="${pageContext.request.contextPath}/img/portfolio/commingsoon3.png" class="img-responsive img-centered" alt="">
+                            <img src="${pageContext.request.contextPath}/img/portfolio/commingsoon3.png" class="img-responsive img-centered" alt="" width=900 height=650>
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:

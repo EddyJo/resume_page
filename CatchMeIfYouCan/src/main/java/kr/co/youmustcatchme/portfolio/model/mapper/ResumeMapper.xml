@@ -35,6 +35,14 @@
 	<result property="skill8Score" column = "skill_8_score"/>
 	<result property="skill6" column = "skill_6"/>
 	
+	<!-- 포트폴리오 이미지 경로 -->
+	<result property="portfolio1ImgPath" column = "portfolio_1_img_path"/>
+	<result property="portfolio2ImgPath" column = "portfolio_2_img_path"/>
+	<result property="portfolio3ImgPath" column = "portfolio_3_img_path"/>
+	<result property="portfolio4ImgPath" column = "portfolio_4_img_path"/>
+	<result property="portfolio5ImgPath" column = "portfolio_5_img_path"/>
+	<result property="portfolio6ImgPath" column = "portfolio_6_img_path"/>
+	
 	<!-- 포트폴리오_1 -->
 	<result property="portfolio1Title" column = "portfolio_1_title"/>
 	<result property="portfolio1Info" column = "portfolio_1_info"/>
@@ -219,6 +227,14 @@
 		   phone, 
 		   email, 
 		   address, 
+		   
+		   <!-- portfolio_img_paths -->
+		   portfolio_1_img_path,
+		   portfolio_2_img_path,
+		   portfolio_3_img_path,
+		   portfolio_4_img_path,
+		   portfolio_5_img_path,
+		   portfolio_6_img_path,
 		   
 		   <!-- skill -->
 		   skill_1, 

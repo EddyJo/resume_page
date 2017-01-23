@@ -3,6 +3,7 @@ package kr.co.youmustcatchme.portfolio.model;
 public class ResumeVO {
 	//지금은 텍스트 정보만 담았는데, 나중에는 이미지 바이너리, 파일 바이너리 정보를 담아야 한다.
 	private String memberId;
+	private String resumeTitle;
 	private String profileImgPath;
 	private String userName;
 	private String email;
@@ -111,6 +112,12 @@ public class ResumeVO {
 		this.memberId = memberId;
 	}
 	
+	public String getResumeTitle() {
+		return resumeTitle;
+	}
+	public void setResumeTitle(String resumeTitle) {
+		this.resumeTitle = resumeTitle;
+	}
 	public String getProfileImgPath() {
 		return profileImgPath;
 	}

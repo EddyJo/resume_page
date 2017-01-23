@@ -37,7 +37,6 @@ public class DownloadController extends AbstractView {
 	protected void renderMergedOutputModel(Map<String, Object> model, HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		File file = (File) model.get("downloadFile");
-		System.out.println("asdfasdf");
 		response.setContentType(getContentType());
 		response.setContentLength((int)file.length());
 

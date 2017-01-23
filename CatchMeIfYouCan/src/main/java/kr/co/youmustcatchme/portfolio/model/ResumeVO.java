@@ -726,7 +726,7 @@ public class ResumeVO {
 	}
 	@Override
 	public String toString() {
-		return "ResumeVO [memberId=" + memberId + ", userName=" + userName + ", email=" + email + ", job1=" + job1
+		return "ResumeVO [memberId=" + memberId + "resumeTitle=" + resumeTitle + ", userName=" + userName + ", email=" + email + ", job1=" + job1
 				+ ", job2=" + job2 + ", job3=" + job3 + ", phone=" + phone + ", age=" + age + ", address=" + address
 				+ ", skill1=" + skill1 + ", skill1Score=" + skill1Score + ", skill2=" + skill2 + ", skill2Score="
 				+ skill2Score + ", skill3=" + skill3 + ", skill3Score=" + skill3Score + ", skill4=" + skill4

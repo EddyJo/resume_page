@@ -477,7 +477,7 @@
                         <div class="modal-body">
                             <h2>${resume.getPortfolio1Title()}</h2>
                             <hr class="line">
-                            <img src="${pageContext.request.contextPath}/img/portfolio/약빵.JPG" class="img-responsive img-centered" alt="">
+                            <img src="${pageContext.request.contextPath}${resume.getPortfolio1ImgPath()}" class="img-responsive img-centered" alt="">
                             <p class=portfolio-info>${resume.getPortfolio1Info()}
                             <br>
                             <br>                        
@@ -517,7 +517,7 @@
                         <div class="modal-body">
                             <h2>${resume.getPortfolio2Title()}</h2>
                             <hr class="line">
-                            <img src="${pageContext.request.contextPath}/img/portfolio/fraud.JPG" class="img-responsive img-centered" alt="">
+                            <img src="${pageContext.request.contextPath}${resume.getPortfolio2ImgPath()}" class="img-responsive img-centered" alt="">
 							<p class=portfolio-info>
 								${resume.getPortfolio2Info()}
 								<br>
@@ -555,21 +555,29 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="${pageContext.request.contextPath}/img/portfolio/홈페이지.JPG" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <h2>${resume.getPortfolio3Title()}</h2>
+                            <hr class="line">
+                            <img src="${pageContext.request.contextPath}${resume.getPortfolio3ImgPath()}" class="img-responsive img-centered" alt="">
+                            <p class=portfolio-info>
+                            ${resume.getPortfolio3Info()}
+								<br>
+								<br> 
+								${resume.getPortfolio3SubTitle1()}: <a>${resume.getPortfolio3SubTitle1Content()}</a> <br>
+								${resume.getPortfolio3SubTitle2()}: <a>${resume.getPortfolio3SubTitle2Content()}</a> 
+								<br> 
+								${resume.getPortfolio3SubTitle3()}: <a>${resume.getPortfolio3SubTitle3Content()}</a>
+                            </p>
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    <strong><a>${resume.getPortfolio3Client()}</a>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    <strong><a>${resume.getPortfolio3Date()}</a>
                                     </strong>
                                 </li>
                                 <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    <strong><a>${resume.getPortfolio3Service()}</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -592,24 +600,23 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>NBA선수 관리 프로그램</h2>
+                            <h2>${resume.getPortfolio4Title()}</h2>
                             <hr class="line">
-                            <img src="${pageContext.request.contextPath}/img/portfolio/nba.jpg" class="img-responsive img-centered" alt="">
+                            <img src="${pageContext.request.contextPath}${resume.getPortfolio4ImgPath()}" class="img-responsive img-centered" alt="">
                             <p class=portfolio-info>
-								Python을 이용해 NBA 선수의 데이터를 입력, 출력, 삭제, 조회하는 프로그램
+								${resume.getPortfolio4Info()}
 								<br> <br> 
-								사용 언어: <a>Python</a> <br>
-								OS 및 DB: <a>Window 10 Home</a> 
+								${resume.getPortfolio4SubTitle1()}: <a>${resume.getPortfolio4SubTitle1Content()}</a> <br>
+								${resume.getPortfolio4SubTitle2()}: <a>${resume.getPortfolio4SubTitle2Content()}</a> 
 								<br> 
-								담당 업무: <a>CRUD 프로그래밍</a>
+								${resume.getPortfolio4SubTitle3()}: <a>${resume.getPortfolio4SubTitle3Content()}</a>
 						    </p>
                             <ul class="list-inline item-details">
-                            	<li>Client: <a>개인 프로젝트</a>
+                            	<li>Client: <a>${resume.getPortfolio4Client()}</a>
                                 </li>
-                                <li>Date: <a>2016.06</a>
+                                <li>Date: <a>${resume.getPortfolio4Date()}</a>
                                 </li>
-                                <li>Service: <a>development</a>
-                                </li>
+                                <li>Service: <a>${resume.getPortfolio4Service()}</a>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -631,22 +638,23 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="${pageContext.request.contextPath}/img/portfolio/commingsoon3.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <h2>${resume.getPortfolio5Title()}</h2>
+                            <hr class="line">
+                            <img src="${pageContext.request.contextPath}${resume.getPortfolio5ImgPath()}" class="img-responsive img-centered" alt="">
+                            <p class=portfolio-info>
+                            ${resume.getPortfolio5Info()}
+								<br> <br> 
+								${resume.getPortfolio5SubTitle1()}: <a>${resume.getPortfolio5SubTitle1Content()}</a> <br>
+								${resume.getPortfolio5SubTitle2()}: <a>${resume.getPortfolio5SubTitle2Content()}</a> 
+								<br> 
+								${resume.getPortfolio5SubTitle3()}: <a>${resume.getPortfolio5SubTitle3Content()}</a>
+                            </p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
+                                <li>Client: <a>${resume.getPortfolio5Client()}</a>
                                 </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
+                                <li>Date: <a>${resume.getPortfolio5Date()}</a>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
+                                <li>Service: <a>${resume.getPortfolio5Service()}</a>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -668,22 +676,23 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="${pageContext.request.contextPath}/img/portfolio/commingsoon3.png" class="img-responsive img-centered" alt="" width=900 height=650>
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <h2>${resume.getPortfolio6Title()}</h2>
+                            <hr class="line">
+                            <img src="${pageContext.request.contextPath}${resume.getPortfolio6ImgPath()}" class="img-responsive img-centered" alt="" width=900 height=650>
+                            <p class=portfolio-info>
+                            	${resume.getPortfolio6Info()}
+								<br> <br> 
+								${resume.getPortfolio6SubTitle1()}: <a>${resume.getPortfolio6SubTitle1Content()}</a> <br>
+								${resume.getPortfolio6SubTitle2()}: <a>${resume.getPortfolio6SubTitle2Content()}</a> 
+								<br> 
+								${resume.getPortfolio6SubTitle3()}: <a>${resume.getPortfolio6SubTitle3Content()}</a>
+                            </p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
+                                <li>Client: <a>${resume.getPortfolio6Client()}</a>
                                 </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
+                                <li>Date: <a>${resume.getPortfolio6Date()}</a>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
+                                <li>Service: <a>${resume.getPortfolio6Service()}</a>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>

@@ -10,4 +10,5 @@ public interface IResumeRepo {
 	ResumeVO selectResume(String memberId);
 	
 	//수정
+	int updateResume(ResumeVO resume);
 }

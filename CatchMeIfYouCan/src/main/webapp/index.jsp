@@ -81,8 +81,8 @@
     <header>
     	<div class="container">
     		${id}
-     		<c:url value="/resume/home.do" var="portfolHomeUrl"/>
-			<a href="${portfolHomeUrl}">이력서 샘플 page</a>
+     		<c:url value="/resume/sample.do" var="samplePortfolUrl"/>
+			<a href="${samplePortfolUrl}">이력서 샘플 page</a>
      		<c:url value="/resume/myresume.do" var="createResumeUrl"/>
 			<a href="${createResumeUrl}">내 이력서</a>
      	</div>

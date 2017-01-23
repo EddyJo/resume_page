@@ -21,22 +21,33 @@ public class ResumeController {
 	@Autowired
 	IResumeRepo resumeRepo;
 	
-	@RequestMapping("/home.do")
+	@RequestMapping("/sample.do")
 	public String goHome() {
-		return "resume/home";
+		return "resume/sample";
 	}
 	
 	@RequestMapping(value="/update.do", method=RequestMethod.GET)
-	public String updateResume(Model model) {
-		return "/";
+	public String updateResume(@ModelAttribute("id") String memberId, Model model) {
+		ResumeVO resume = resumeRepo.selectResume(memberId);
+		model.addAttribute("resume", resume);
+		System.out.println("업데이트 폼");
+		return "resume/resumeForm";
+	}
+	
+	@RequestMapping(value="/updateForm.do", method=RequestMethod.POST)
+	public String updateResume(@ModelAttribute("id") String memberId, ResumeVO resume, Model model) {
+		System.out.println("업데이트 전");
+		System.out.println(memberId);
+		resumeRepo.updateResume(resume);
+		System.out.println("업데이트 후");
+		return createResume(memberId, model);
 	}
 	
 	@RequestMapping(value="/myresume.do")
-	public String createResume(@ModelAttribute("id") String id,
-			Model model, RedirectAttributes redirectAttrs) {
+	public String createResume(@ModelAttribute("id") String memberId,
+			Model model) {
 		
 		//회원 아이디로 이력서를 검색하여 이력서가 있는지 없는지 확인
-		String memberId = id;
 		ResumeVO resume = resumeRepo.selectResume(memberId);
 		System.out.println(memberId);
 		
@@ -49,6 +60,6 @@ public class ResumeController {
 		}
 		model.addAttribute("resume", resume);
 		System.out.println(resume.toString());
-		return "resume/resumeForm";
+		return "resume/myresume";
 	}
 }

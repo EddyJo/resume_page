@@ -261,4 +261,13 @@
      where member_id = #{memberId}
 </select>
 
+<!-- update -->
+<update id="updateResume" parameterType="kr.co.youmustcatchme.portfolio.model.ResumeVO">
+	Update resume_info
+			<set>
+				<if test="resumeTitle!=null">
+					resume_title = #{resumeTitle}
+				</if>
+			</set>
+</update>
 </mapper>

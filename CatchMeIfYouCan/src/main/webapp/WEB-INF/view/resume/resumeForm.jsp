@@ -47,7 +47,7 @@
 </head>
 
 <body id="page-top" class="index">
-	<form action='<c:url value="updateForm.do"/>' method=post>
+	<form action='<c:url value="updateForm.do"/>' method=post id="updateResume">
 		<div>
 			<!-- Navigation -->
 			<nav id="mainNav"
@@ -96,28 +96,33 @@
 						</h1>
 						<div class="job">
 							<input type="text" name="job1" id="job1"
-								value="${resume.getJob1()}">,
-							<input type="text" name="job2" id="job2"
-								value="${resume.getJob2()}">,
-							<input type="text" name="job3" id="job3"
-								value="${resume.getJob3()}">
+								value="${resume.getJob1()}">, <input type="text"
+								name="job2" id="job2" value="${resume.getJob2()}">, <input
+								type="text" name="job3" id="job3" value="${resume.getJob3()}">
 						</div>
 						<hr>
 						<div class="label">AGE</div>
-						<div class='detail'><input type="text" name="age" id="age"
-								value="${resume.getAge()}"></div>
+						<div class='detail'>
+							<input type="text" name="age" id="age" value="${resume.getAge()}">
+						</div>
 						<br>
 						<div class="label">Phone</div>
-						<div class='detail'><input type="text" name="phone" id="phone"
-								value="${resume.getPhone()}"></div>
+						<div class='detail'>
+							<input type="text" name="phone" id="phone"
+								value="${resume.getPhone()}">
+						</div>
 						<br>
 						<div class="label">Email</div>
-						<div class='detail'><input type="text" name="email" id="email"
-								value="${resume.getEmail()}"></div>
+						<div class='detail'>
+							<input type="text" name="email" id="email"
+								value="${resume.getEmail()}">
+						</div>
 						<br>
 						<div class="label">Address</div>
-						<div class='detail'><input type="text" name="address" id="address"
-								value="${resume.getAddress()}"></div>
+						<div class='detail'>
+							<input type="text" name="address" id="address"
+								value="${resume.getAddress()}">
+						</div>
 					</div>
 					<div class="links">
 						<ul class="list-inline">
@@ -137,13 +142,12 @@
 							</a></li>
 						</ul>
 						<input type="text" name="linkedinUrl" id="linkedinUrl"
-								value="${resume.getLinkedinUrl()}">
-					<input type="text" name="githubUrl" id="githubUrl"
-								value="${resume.getGithubUrl()}">
-					<input type="text" name="blogUrl" id="blogUrl"
-								value="${resume.getBlogUrl()}">
+							value="${resume.getLinkedinUrl()}"> <input type="text"
+							name="githubUrl" id="githubUrl" value="${resume.getGithubUrl()}">
+						<input type="text" name="blogUrl" id="blogUrl"
+							value="${resume.getBlogUrl()}">
 					</div>
-					
+
 				</div>
 			</header>
 
@@ -161,8 +165,11 @@
 							<div class=skill-set>
 								<div class=skill>
 									<p>
-										<span class=skill-item>${resume.getSkill1()}</span> <span
-											class=skill-value>${resume.getSkill1Score()}%</span>
+										<span class=skill-item> <input type="text"
+											name="skill1" value="${resume.getSkill1()}">
+										</span> <span class=skill-value> <input type="text"
+											name="skill1Score" value="${resume.getSkill1Score()}">%
+										</span>
 									</p>
 								</div>
 								<div>
@@ -176,8 +183,11 @@
 							<div class=skill-set>
 								<div class=skill>
 									<p>
-										<span class=skill-item>${resume.getSkill2()}</span> <span
-											class=skill-value>${resume.getSkill2Score()}%</span>
+										<span class=skill-item> <input type="text"
+											name="skill2" value="${resume.getSkill2()}">
+										</span> <span class=skill-value> <input type="text"
+											name="skill2Score" value="${resume.getSkill2Score()}">%
+										</span>
 									</p>
 								</div>
 								<div>
@@ -191,8 +201,10 @@
 							<div class=skill-set>
 								<div class=skill>
 									<p>
-										<span class=skill-item>${resume.getSkill3()}</span> <span
-											class=skill-value>${resume.getSkill3Score()}%</span>
+										<span class=skill-item><input type="text" name="skill3"
+											value="${resume.getSkill3()}"></span> <span
+											class=skill-value><input type="text"
+											name="skill3Score" value="${resume.getSkill3Score()}">%</span>
 									</p>
 								</div>
 								<div>
@@ -206,8 +218,10 @@
 							<div class=skill-set>
 								<div class=skill>
 									<p>
-										<span class=skill-item>${resume.getSkill4()}</span> <span
-											class=skill-value>${resume.getSkill4Score()}%</span>
+										<span class=skill-item><input type="text" name="skill4"
+											value="${resume.getSkill4()}"></span> <span
+											class=skill-value><input type="text"
+											name="skill4Score" value="${resume.getSkill4Score()}">%</span>
 									</p>
 								</div>
 								<div>
@@ -223,8 +237,10 @@
 							<div class=skill-set>
 								<div class=skill>
 									<p>
-										<span class=skill-item>${resume.getSkill5()}</span> <span
-											class=skill-value>${resume.getSkill5Score()}%</span>
+										<span class=skill-item><input type="text" name="skill5"
+											value="${resume.getSkill5()}"></span> <span
+											class=skill-value><input type="text"
+											name="skill5Score" value="${resume.getSkill5Score()}">%</span>
 									</p>
 								</div>
 								<div>
@@ -238,8 +254,10 @@
 							<div class=skill-set>
 								<div class=skill>
 									<p>
-										<span class=skill-item>${resume.getSkill6()}</span> <span
-											class=skill-value>${resume.getSkill6Score()}%</span>
+										<span class=skill-item><input type="text" name="skill6"
+											value="${resume.getSkill6()}"></span> <span
+											class=skill-value><input type="text"
+											name="skill6Score" value="${resume.getSkill6Score()}">%</span>
 									</p>
 								</div>
 								<div>
@@ -253,8 +271,10 @@
 							<div class=skill-set>
 								<div class=skill>
 									<p>
-										<span class=skill-item>${resume.getSkill7()}</span> <span
-											class=skill-value>${resume.getSkill7Score()}%</span>
+										<span class=skill-item><input type="text" name="skill7"
+											value="${resume.getSkill7()}"></span> <span
+											class=skill-value><input type="text"
+											name="skill7Score" value="${resume.getSkill7Score()}">%</span>
 									</p>
 								</div>
 								<div>
@@ -268,8 +288,10 @@
 							<div class=skill-set>
 								<div class=skill>
 									<p>
-										<span class=skill-item>${resume.getSkill8()}</span> <span
-											class=skill-value>${resume.getSkill8Score()}%</span>
+										<span class=skill-item><input type="text" name="skill8"
+											value="${resume.getSkill8()}"></span> <span
+											class=skill-value><input type="text"
+											name="skill8Score" value="${resume.getSkill8Score()}">%</span>
 									</p>
 								</div>
 								<div>
@@ -468,22 +490,32 @@
 						<div class="row">
 							<div class="col-lg-8 col-lg-offset-2">
 								<div class="modal-body">
-									<h2>${resume.getPortfolio1Title()}</h2>
+									<h2>
+										<input type="text" name="portfolio1Title"
+											value="${resume.getPortfolio1Title()}">
+									</h2>
 									<hr class="line">
 									<img
 										src="${pageContext.request.contextPath}${resume.getPortfolio1ImgPath()}"
 										class="img-responsive img-centered" alt="">
-									<p class=portfolio-info>${resume.getPortfolio1Info()}
-										<br> <br> ${resume.getPortfolio1SubTitle1()}: <a>${resume.getPortfolio1SubTitle1Content()}</a>
-										<br> ${resume.getPortfolio1SubTitle2()}: <a>${resume.getPortfolio1SubTitle2Content()}</a>
-										<br> ${resume.getPortfolio1SubTitle3()}: <a>${resume.getPortfolio1SubTitle3Content()}</a>
+									<p class=portfolio-info>
+										<textarea form="updateResume" rows="8" cols="60" name="portfolio1Info" wrap="physical">${resume.getPortfolio1Info()}</textarea>
+										 <br> <br>
+										<input type="text" name="portfolio1SubTitle1"
+											value="${resume.getPortfolio1SubTitle1()}">: <a>
+											<input type="text" name="portfolio1SubTitle1Content"
+											value="${resume.getPortfolio1SubTitle1Content()}">
+										</a> <br><input type="text" name="portfolio1SubTitle2" value="${resume.getPortfolio1SubTitle2()}">: 
+										<a><input type="text" name="portfolio1SubTitle2Content" value="${resume.getPortfolio1SubTitle2Content()}"></a>
+										<br> <input type="text" name="portfolio1SubTitle3" value="${resume.getPortfolio1SubTitle3()}">:
+										 <a><input type="text" name="portfolio1SubTitle3Content" value="${resume.getPortfolio1SubTitle3Content()}"></a>
 									</p>
 									<ul class="list-inline item-details">
-										<li>Client:<a>${resume.getPortfolio1Client()}</a>
+										<li>Client:<a><input type="text" name="portfolio1Client" value="${resume.getPortfolio1Client()}"></a>
 										</li>
-										<li>Date: <a>${resume.getPortfolio1Date()}</a>
+										<li>Date: <a><input type="text" name="portfolio1Date" value="${resume.getPortfolio1Date()}"></a>
 										</li>
-										<li>Service: <a>${resume.getPortfolio1Service()}</a>
+										<li>Service: <a><input type="text" name="portfolio1Service" value="${resume.getPortfolio1Service()}"></a>
 										</li>
 
 									</ul>
@@ -697,7 +729,7 @@
 										<li>Service: <a>${resume.getPortfolio6Service()}</a>
 										</li>
 									</ul>
-									   <button type="button" class="btn btn-default"
+									<button type="button" class="btn btn-default"
 										data-dismiss="modal">
 										<i class="fa fa-times"></i> Close
 									</button>
@@ -707,7 +739,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 	</form>
 

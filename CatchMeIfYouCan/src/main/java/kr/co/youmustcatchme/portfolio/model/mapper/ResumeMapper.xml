@@ -308,9 +308,9 @@
 				portfolio_1_sub_title_2_content = #{portfolio1SubTitle2Content},
 				portfolio_1_sub_title_3 = #{portfolio1SubTitle3},
 				portfolio_1_sub_title_3_content = #{portfolio1SubTitle3Content},
-				protfolio_1_client = #{portfolio1Client},
-				protfolio_1_date = #{portfolio1Date},
-				protfolio_1_Service = #{portfolio1Service},
+				portfolio_1_client = #{portfolio1Client},
+				portfolio_1_date = #{portfolio1Date},
+				portfolio_1_Service = #{portfolio1Service},
 				
 				portfolio_2_title = #{portfolio2Title},
 				portfolio_2_info = #{portfolio2Info},
@@ -320,9 +320,9 @@
 				portfolio_2_sub_title_2_content = #{portfolio2SubTitle2Content},
 				portfolio_2_sub_title_3 = #{portfolio2SubTitle3},
 				portfolio_2_sub_title_3_content = #{portfolio2SubTitle3Content},
-				protfolio_2_client = #{portfolio2Client},
-				protfolio_2_date = #{portfolio2Date},
-				protfolio_2_Service = #{portfolio2Service},
+				portfolio_2_client = #{portfolio2Client},
+				portfolio_2_date = #{portfolio2Date},
+				portfolio_2_Service = #{portfolio2Service},
 				
 				portfolio_3_title = #{portfolio3Title},
 				portfolio_3_info = #{portfolio3Info},
@@ -332,9 +332,9 @@
 				portfolio_3_sub_title_2_content = #{portfolio3SubTitle2Content},
 				portfolio_3_sub_title_3 = #{portfolio3SubTitle3},
 				portfolio_3_sub_title_3_content = #{portfolio3SubTitle3Content},
-				protfolio_3_client = #{portfolio3Client},
-				protfolio_3_date = #{portfolio3Date},
-				protfolio_3_Service = #{portfolio3Service},
+				portfolio_3_client = #{portfolio3Client},
+				portfolio_3_date = #{portfolio3Date},
+				portfolio_3_Service = #{portfolio3Service},
 				
 				portfolio_4_title = #{portfolio3Title},
 				portfolio_4_info = #{portfolio4Info},
@@ -344,9 +344,9 @@
 				portfolio_4_sub_title_2_content = #{portfolio4SubTitle2Content},
 				portfolio_4_sub_title_3 = #{portfolio4SubTitle3},
 				portfolio_4_sub_title_3_content = #{portfolio4SubTitle3Content},
-				protfolio_4_client = #{portfolio4Client},
-				protfolio_4_date = #{portfolio4Date},
-				protfolio_4_Service = #{portfolio4Service},
+				portfolio_4_client = #{portfolio4Client},
+				portfolio_4_date = #{portfolio4Date},
+				portfolio_4_Service = #{portfolio4Service},
 				
 				portfolio_5_title = #{portfolio5Title},
 				portfolio_5_info = #{portfolio5Info},
@@ -356,9 +356,9 @@
 				portfolio_5_sub_title_2_content = #{portfolio5SubTitle2Content},
 				portfolio_5_sub_title_3 = #{portfolio5SubTitle3},
 				portfolio_5_sub_title_3_content = #{portfolio5SubTitle3Content},
-				protfolio_5_client = #{portfolio5Client},
-				protfolio_5_date = #{portfolio5Date},
-				protfolio_5_Service = #{portfolio5Service},
+				portfolio_5_client = #{portfolio5Client},
+				portfolio_5_date = #{portfolio5Date},
+				portfolio_5_Service = #{portfolio5Service},
 				
 				portfolio_6_title = #{portfolio6Title},
 				portfolio_6_info = #{portfolio6Info},
@@ -368,9 +368,9 @@
 				portfolio_6_sub_title_2_content = #{portfolio6SubTitle2Content},
 				portfolio_6_sub_title_3 = #{portfolio6SubTitle3},
 				portfolio_6_sub_title_3_content = #{portfolio6SubTitle3Content},
-				protfolio_6_client = #{portfolio6Client},
-				protfolio_6_date = #{portfolio6Date},
-				protfolio_6_Service = #{portfolio6Service}
+				portfolio_6_client = #{portfolio6Client},
+				portfolio_6_date = #{portfolio6Date},
+				portfolio_6_Service = #{portfolio6Service}
 			</set>
 </update>
 </mapper>

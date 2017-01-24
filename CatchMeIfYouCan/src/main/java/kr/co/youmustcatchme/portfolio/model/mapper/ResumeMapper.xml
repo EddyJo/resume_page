@@ -265,9 +265,23 @@
 <update id="updateResume" parameterType="kr.co.youmustcatchme.portfolio.model.ResumeVO">
 	Update resume_info
 			<set>
-				<if test="resumeTitle!=null">
-					resume_title = #{resumeTitle}
-				</if>
+				<!-- 기본정보 -->
+				resume_title = #{resumeTitle},
+				username = #{userName},
+				job_1 = #{job1},
+				job_2 = #{job2},
+				job_3 = #{job3},
+				age = #{age},
+				phone = #{phone},
+				email = #{email},
+				address = #{address},
+				
+				<!-- URL -->
+				linkedin_url = #{linkedinUrl},
+				github_url = #{githubUrl},
+				blog_url = #{blogUrl}
+				
+				<!-- skill-set -->
 			</set>
 </update>
 </mapper>

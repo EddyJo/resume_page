@@ -10,7 +10,7 @@
 <div>
 	<form action='login.do' method=post>
 		<input type="text" name="memberId" id="id" placeholder="아이디를 입력하세요.">
-		<input type="text" name="password" id="password" placeholder="비밀번호를 입력하세요."> 
+		<input type="password" name="password" id="password" placeholder="비밀번호를 입력하세요."> 
 		<input type="submit" value="로그인">
 	</form>
 </div>

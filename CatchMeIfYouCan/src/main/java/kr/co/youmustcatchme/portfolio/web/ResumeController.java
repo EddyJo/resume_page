@@ -36,10 +36,8 @@ public class ResumeController {
 	
 	@RequestMapping(value="/updateForm.do", method=RequestMethod.POST)
 	public String updateResume(@ModelAttribute("id") String memberId, ResumeVO resume, Model model) {
-		System.out.println("업데이트 전");
-		System.out.println(memberId);
+		System.out.println(resume.getUserName());
 		resumeRepo.updateResume(resume);
-		System.out.println("업데이트 후");
 		return createResume(memberId, model);
 	}
 	

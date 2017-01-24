@@ -14,7 +14,7 @@
 			<input type="text" name="memberId" id="id" placeholder="아이디를 입력하세요.">
 		</div>
 		<div>
-			<input type="text" name="password" id="password" placeholder="비밀번호를 입력하세요.">
+			<input type="password" name="password" id="password" placeholder="비밀번호를 입력하세요.">
 		</div>
 		<div>
 			<input type="text" name="userName" id="username" placeholder="이름을 입력하세요.">

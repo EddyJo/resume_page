@@ -95,7 +95,7 @@
 								value="${resume.getUserName()}">
 						</h1>
 						<div class="job">
-							<input type="text" name="job1" id="job1" width=30
+							<input type="text" name="job1" id="job1"
 								value="${resume.getJob1()}">,
 							<input type="text" name="job2" id="job2"
 								value="${resume.getJob2()}">,

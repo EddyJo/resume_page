@@ -722,7 +722,5 @@
 
     <!-- Theme JavaScript -->
     <script src="${pageContext.request.contextPath}/js/freelancer.min.js"></script>
-	<c:url value="resume/update.do" var="updateUrl"/>
-	<a href=updateUrl>수정하기</a>
 </body>
 </html>

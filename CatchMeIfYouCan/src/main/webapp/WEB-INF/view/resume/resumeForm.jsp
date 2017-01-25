@@ -499,7 +499,7 @@
 										src="${pageContext.request.contextPath}${resume.getPortfolio1ImgPath()}"
 										class="img-responsive img-centered" alt="">
 									<p class=portfolio-info>
-										<textarea form="updateResume" rows="8" cols="60" name="portfolio1Info" wrap="physical">${resume.getPortfolio1Info()}</textarea>
+										<textarea form="updateResume" rows="8" cols="60" name="portfolio1Info">${resume.getPortfolio1Info()}</textarea>
 										 <br> <br>
 										<input type="text" name="portfolio1SubTitle1"
 											value="${resume.getPortfolio1SubTitle1()}">: <a>
@@ -541,23 +541,32 @@
 						<div class="row">
 							<div class="col-lg-8 col-lg-offset-2">
 								<div class="modal-body">
-									<h2>${resume.getPortfolio2Title()}</h2>
+									<h2>
+										<input type="text" name="portfolio2Title"
+											value="${resume.getPortfolio2Title()}">
+									</h2>
 									<hr class="line">
 									<img
 										src="${pageContext.request.contextPath}${resume.getPortfolio2ImgPath()}"
 										class="img-responsive img-centered" alt="">
 									<p class=portfolio-info>
-										${resume.getPortfolio2Info()} <br> <br>
-										${resume.getPortfolio2SubTitle1()}: <a>${resume.getPortfolio2SubTitle1Content()}</a>
-										<br> ${resume.getPortfolio2SubTitle2()}: <a>${resume.getPortfolio2SubTitle2Content()}</a>
-										<br> ${resume.getPortfolio2SubTitle3()}: <a>${resume.getPortfolio2SubTitle3Content()}</a>
+										<textarea form="updateResume" rows="8" cols="60" name="portfolio2Info">${resume.getPortfolio2Info()}</textarea>
+										 <br> <br>
+										<input type="text" name="portfolio2SubTitle1"
+											value="${resume.getPortfolio2SubTitle1()}">: <a>
+											<input type="text" name="portfolio2SubTitle1Content"
+											value="${resume.getPortfolio2SubTitle1Content()}">
+										</a> <br><input type="text" name="portfolio2SubTitle2" value="${resume.getPortfolio2SubTitle2()}">: 
+										<a><input type="text" name="portfolio2SubTitle2Content" value="${resume.getPortfolio2SubTitle2Content()}"></a>
+										<br> <input type="text" name="portfolio2SubTitle3" value="${resume.getPortfolio2SubTitle3()}">:
+										 <a><input type="text" name="portfolio2SubTitle3Content" value="${resume.getPortfolio2SubTitle3Content()}"></a>
 									</p>
 									<ul class="list-inline item-details">
-										<li>Client:<a>${resume.getPortfolio2Client()}</a>
+										<li>Client:<a><input type="text" name="portfolio2Client" value="${resume.getPortfolio2Client()}"></a>
 										</li>
-										<li>Date: <a>${resume.getPortfolio2Date()}</a>
+										<li>Date: <a><input type="text" name="portfolio2Date" value="${resume.getPortfolio2Date()}"></a>
 										</li>
-										<li>Service: <a>${resume.getPortfolio2Service()}</a>
+										<li>Service: <a><input type="text" name="portfolio2Service" value="${resume.getPortfolio2Service()}"></a>
 										</li>
 
 									</ul>
@@ -583,27 +592,34 @@
 						<div class="row">
 							<div class="col-lg-8 col-lg-offset-2">
 								<div class="modal-body">
-									<h2>${resume.getPortfolio3Title()}</h2>
+									<h2>
+										<input type="text" name="portfolio3Title"
+											value="${resume.getPortfolio3Title()}">
+									</h2>
 									<hr class="line">
 									<img
 										src="${pageContext.request.contextPath}${resume.getPortfolio3ImgPath()}"
 										class="img-responsive img-centered" alt="">
 									<p class=portfolio-info>
-										${resume.getPortfolio3Info()} <br> <br>
-										${resume.getPortfolio3SubTitle1()}: <a>${resume.getPortfolio3SubTitle1Content()}</a>
-										<br> ${resume.getPortfolio3SubTitle2()}: <a>${resume.getPortfolio3SubTitle2Content()}</a>
-										<br> ${resume.getPortfolio3SubTitle3()}: <a>${resume.getPortfolio3SubTitle3Content()}</a>
+										<textarea form="updateResume" rows="8" cols="60" name="portfolio3Info">${resume.getPortfolio3Info()}</textarea>
+										 <br> <br>
+										<input type="text" name="portfolio3SubTitle1"
+											value="${resume.getPortfolio3SubTitle1()}">: <a>
+											<input type="text" name="portfolio3SubTitle1Content"
+											value="${resume.getPortfolio3SubTitle1Content()}">
+										</a> <br><input type="text" name="portfolio3SubTitle2" value="${resume.getPortfolio3SubTitle2()}">: 
+										<a><input type="text" name="portfolio3SubTitle2Content" value="${resume.getPortfolio3SubTitle2Content()}"></a>
+										<br> <input type="text" name="portfolio3SubTitle3" value="${resume.getPortfolio3SubTitle3()}">:
+										 <a><input type="text" name="portfolio3SubTitle3Content" value="${resume.getPortfolio3SubTitle3Content()}"></a>
 									</p>
 									<ul class="list-inline item-details">
-										<li>Client: <strong><a>${resume.getPortfolio3Client()}</a>
-										</strong>
+										<li>Client:<a><input type="text" name="portfolio3Client" value="${resume.getPortfolio3Client()}"></a>
 										</li>
-										<li>Date: <strong><a>${resume.getPortfolio3Date()}</a>
-										</strong>
+										<li>Date: <a><input type="text" name="portfolio3Date" value="${resume.getPortfolio3Date()}"></a>
 										</li>
-										<li>Service: <strong><a>${resume.getPortfolio3Service()}</a>
-										</strong>
+										<li>Service: <a><input type="text" name="portfolio3Service" value="${resume.getPortfolio3Service()}"></a>
 										</li>
+
 									</ul>
 									<button type="button" class="btn btn-default"
 										data-dismiss="modal">
@@ -627,24 +643,34 @@
 						<div class="row">
 							<div class="col-lg-8 col-lg-offset-2">
 								<div class="modal-body">
-									<h2>${resume.getPortfolio4Title()}</h2>
+									<h2>
+										<input type="text" name="portfolio4Title"
+											value="${resume.getPortfolio4Title()}">
+									</h2>
 									<hr class="line">
 									<img
 										src="${pageContext.request.contextPath}${resume.getPortfolio4ImgPath()}"
 										class="img-responsive img-centered" alt="">
 									<p class=portfolio-info>
-										${resume.getPortfolio4Info()} <br> <br>
-										${resume.getPortfolio4SubTitle1()}: <a>${resume.getPortfolio4SubTitle1Content()}</a>
-										<br> ${resume.getPortfolio4SubTitle2()}: <a>${resume.getPortfolio4SubTitle2Content()}</a>
-										<br> ${resume.getPortfolio4SubTitle3()}: <a>${resume.getPortfolio4SubTitle3Content()}</a>
+										<textarea form="updateResume" rows="8" cols="60" name="portfolio4Info">${resume.getPortfolio4Info()}</textarea>
+										 <br> <br>
+										<input type="text" name="portfolio4SubTitle1"
+											value="${resume.getPortfolio4SubTitle1()}">: <a>
+											<input type="text" name="portfolio4SubTitle1Content"
+											value="${resume.getPortfolio4SubTitle1Content()}">
+										</a> <br><input type="text" name="portfolio4SubTitle2" value="${resume.getPortfolio4SubTitle2()}">: 
+										<a><input type="text" name="portfolio4SubTitle2Content" value="${resume.getPortfolio4SubTitle2Content()}"></a>
+										<br> <input type="text" name="portfolio4SubTitle3" value="${resume.getPortfolio4SubTitle3()}">:
+										 <a><input type="text" name="portfolio4SubTitle3Content" value="${resume.getPortfolio4SubTitle3Content()}"></a>
 									</p>
 									<ul class="list-inline item-details">
-										<li>Client: <a>${resume.getPortfolio4Client()}</a>
+										<li>Client:<a><input type="text" name="portfolio4Client" value="${resume.getPortfolio4Client()}"></a>
 										</li>
-										<li>Date: <a>${resume.getPortfolio4Date()}</a>
+										<li>Date: <a><input type="text" name="portfolio4Date" value="${resume.getPortfolio4Date()}"></a>
 										</li>
-										<li>Service: <a>${resume.getPortfolio4Service()}</a>
+										<li>Service: <a><input type="text" name="portfolio4Service" value="${resume.getPortfolio4Service()}"></a>
 										</li>
+
 									</ul>
 									<button type="button" class="btn btn-default"
 										data-dismiss="modal">
@@ -668,24 +694,34 @@
 						<div class="row">
 							<div class="col-lg-8 col-lg-offset-2">
 								<div class="modal-body">
-									<h2>${resume.getPortfolio5Title()}</h2>
+									<h2>
+										<input type="text" name="portfolio5Title"
+											value="${resume.getPortfolio5Title()}">
+									</h2>
 									<hr class="line">
 									<img
 										src="${pageContext.request.contextPath}${resume.getPortfolio5ImgPath()}"
 										class="img-responsive img-centered" alt="">
 									<p class=portfolio-info>
-										${resume.getPortfolio5Info()} <br> <br>
-										${resume.getPortfolio5SubTitle1()}: <a>${resume.getPortfolio5SubTitle1Content()}</a>
-										<br> ${resume.getPortfolio5SubTitle2()}: <a>${resume.getPortfolio5SubTitle2Content()}</a>
-										<br> ${resume.getPortfolio5SubTitle3()}: <a>${resume.getPortfolio5SubTitle3Content()}</a>
+										<textarea form="updateResume" rows="8" cols="60" name="portfolio5Info">${resume.getPortfolio5Info()}</textarea>
+										 <br> <br>
+										<input type="text" name="portfolio1SubTitle5"
+											value="${resume.getPortfolio5SubTitle1()}">: <a>
+											<input type="text" name="portfolio5SubTitle1Content"
+											value="${resume.getPortfolio5SubTitle1Content()}">
+										</a> <br><input type="text" name="portfolio5SubTitle2" value="${resume.getPortfolio5SubTitle2()}">: 
+										<a><input type="text" name="portfolio5SubTitle2Content" value="${resume.getPortfolio5SubTitle2Content()}"></a>
+										<br> <input type="text" name="portfolio5SubTitle3" value="${resume.getPortfolio5SubTitle3()}">:
+										 <a><input type="text" name="portfolio5SubTitle3Content" value="${resume.getPortfolio5SubTitle3Content()}"></a>
 									</p>
 									<ul class="list-inline item-details">
-										<li>Client: <a>${resume.getPortfolio5Client()}</a>
+										<li>Client:<a><input type="text" name="portfolio5Client" value="${resume.getPortfolio5Client()}"></a>
 										</li>
-										<li>Date: <a>${resume.getPortfolio5Date()}</a>
+										<li>Date: <a><input type="text" name="portfolio5Date" value="${resume.getPortfolio5Date()}"></a>
 										</li>
-										<li>Service: <a>${resume.getPortfolio5Service()}</a>
+										<li>Service: <a><input type="text" name="portfolio5Service" value="${resume.getPortfolio5Service()}"></a>
 										</li>
+
 									</ul>
 									<button type="button" class="btn btn-default"
 										data-dismiss="modal">
@@ -709,25 +745,34 @@
 						<div class="row">
 							<div class="col-lg-8 col-lg-offset-2">
 								<div class="modal-body">
-									<h2>${resume.getPortfolio6Title()}</h2>
+									<h2>
+										<input type="text" name="portfolio6Title"
+											value="${resume.getPortfolio6Title()}">
+									</h2>
 									<hr class="line">
 									<img
 										src="${pageContext.request.contextPath}${resume.getPortfolio6ImgPath()}"
-										class="img-responsive img-centered" alt="" width=900
-										height=650>
+										class="img-responsive img-centered" alt="">
 									<p class=portfolio-info>
-										${resume.getPortfolio6Info()} <br> <br>
-										${resume.getPortfolio6SubTitle1()}: <a>${resume.getPortfolio6SubTitle1Content()}</a>
-										<br> ${resume.getPortfolio6SubTitle2()}: <a>${resume.getPortfolio6SubTitle2Content()}</a>
-										<br> ${resume.getPortfolio6SubTitle3()}: <a>${resume.getPortfolio6SubTitle3Content()}</a>
+										<textarea form="updateResume" rows="8" cols="60" name="portfolio6Info">${resume.getPortfolio6Info()}</textarea>
+										 <br> <br>
+										<input type="text" name="portfolio6SubTitle1"
+											value="${resume.getPortfolio6SubTitle1()}">: <a>
+											<input type="text" name="portfolio6SubTitle1Content"
+											value="${resume.getPortfolio6SubTitle1Content()}">
+										</a> <br><input type="text" name="portfolio6SubTitle2" value="${resume.getPortfolio6SubTitle2()}">: 
+										<a><input type="text" name="portfolio6SubTitle2Content" value="${resume.getPortfolio6SubTitle2Content()}"></a>
+										<br> <input type="text" name="portfolio6SubTitle3" value="${resume.getPortfolio6SubTitle3()}">:
+										 <a><input type="text" name="portfolio6SubTitle3Content" value="${resume.getPortfolio6SubTitle3Content()}"></a>
 									</p>
 									<ul class="list-inline item-details">
-										<li>Client: <a>${resume.getPortfolio6Client()}</a>
+										<li>Client:<a><input type="text" name="portfolio6Client" value="${resume.getPortfolio6Client()}"></a>
 										</li>
-										<li>Date: <a>${resume.getPortfolio6Date()}</a>
+										<li>Date: <a><input type="text" name="portfolio6Date" value="${resume.getPortfolio6Date()}"></a>
 										</li>
-										<li>Service: <a>${resume.getPortfolio6Service()}</a>
+										<li>Service: <a><input type="text" name="portfolio6Service" value="${resume.getPortfolio6Service()}"></a>
 										</li>
+
 									</ul>
 									<button type="button" class="btn btn-default"
 										data-dismiss="modal">

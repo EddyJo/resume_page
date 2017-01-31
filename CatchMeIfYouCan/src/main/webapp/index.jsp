@@ -57,20 +57,44 @@
                         <a href="#page-top"></a>
                     </li>
                     <!-- 회원 가입 -->
-                    <li class="page-scroll">
-                   		<c:url value="/member/join.do" var="joinUrl"/>
-                        <a href="${joinUrl}">Sign In</a>
-                    </li>
+                    <c:if test="${id eq null}">
+	                    <li class="page-scroll">
+	                   		<c:url value="/member/join.do" var="joinUrl"/>
+	                        <a href="${joinUrl}">Sign In</a>
+	                    </li>
+                    </c:if>
+                    
            			<!-- 로그인 페이지 -->
-                    <li class="page-scroll">
-                    	<c:url value="/member/login.do" var="loginUrl"/>
-                        <a href="${loginUrl}">Log In</a>
-                    </li>
+           			<c:if test="${id eq null}">
+	                    <li class="page-scroll">
+	                    	<c:url value="/member/login.do" var="loginUrl"/>
+	                        <a href="${loginUrl}">Log In</a>
+	                    </li>
+                   	</c:if>
                     <!-- 유저 리스트 -->
                     <c:url value="/member/list.do" var="memberListUrl"/>
                     <li class="page-scroll">
                         <a href="${memberListUrl}">UserList</a>
                     </li>
+                    
+                    <!-- 이력서 샘플 -->
+                   <c:url value="/resume/sample.do" var="samplePortfolUrl"/>
+                   <li class="page-scroll">
+					<a href="${samplePortfolUrl}">샘플 이력서</a>
+                   </li>
+                   
+                   <!-- 내 이력서  -->
+                   <c:url value="/resume/myresume.do" var="myresumeUrl"/>
+                   <li class="page-scroll">
+					<a href="${myresumeUrl}">내 이력서</a>
+                   </li>
+                    <!-- 로그아웃 -->
+                    <c:if test="${id ne null}">
+						<c:url value="/member/logout.do" var="logOutUrl" />
+						<li class="page-scroll">
+						<a href="${logOutUrl}">Logout</a>
+						</li>
+					</c:if>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

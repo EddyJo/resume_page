@@ -13,7 +13,18 @@
 
 	
     <mvc:annotation-driven />
-
+	
+	<!-- 로그인 인터셉터 -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/resume/update.do"/>
+			<mvc:mapping path="/resume/updateForm.do"/>
+			<mvc:mapping path="/resume/myresume.do"/>
+			<bean class="kr.co.youmustcatchme.member.util.LoginCheckInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
+	
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 	        <!-- Example: a logical view name of 'showMessage' is mapped to '/WEB-INF/jsp/showMessage.jsp' -->
 	        <property name="prefix" value="/WEB-INF/view/"/>

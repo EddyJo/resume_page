@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -132,5 +133,12 @@ public class ResumeController {
 		}
 		model.addAttribute("resume", resume);
 		return "resume/myresume";
+	}
+	
+	@RequestMapping("/{memberId}.do")
+	public String detailResume(@PathVariable String memberId, Model model) {
+		ResumeVO resume = resumeRepo.selectResume(memberId);
+		model.addAttribute("resume", resume);
+		return "resume/detail";
 	}
 }

@@ -1,5 +1,7 @@
 package kr.co.youmustcatchme.portfolio.model.mapper;
 
+import java.util.ArrayList;
+
 import kr.co.youmustcatchme.portfolio.model.ResumeVO;
 
 public interface IResumeRepo {
@@ -11,4 +13,7 @@ public interface IResumeRepo {
 	
 	//수정
 	int updateResume(ResumeVO resume);
+	
+	//리스트
+	ArrayList<ResumeVO> selectAllResume();
 }

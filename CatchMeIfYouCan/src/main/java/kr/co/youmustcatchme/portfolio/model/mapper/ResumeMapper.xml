@@ -261,6 +261,131 @@
      where member_id = #{memberId}
 </select>
 
+
+<!-- selectAll -->
+
+<select id="selectAllResume"  resultMap="resumeMap">
+	Select member_id,
+		   resume_title,
+		   profile_img_path,
+		   username, 
+		   age, 
+		   job_1, 
+		   job_2, 
+		   job_3, 
+		   phone, 
+		   email, 
+		   address, 
+		   
+		   <!-- portfolio_img_paths -->
+		   portfolio_1_img_path,
+		   portfolio_2_img_path,
+		   portfolio_3_img_path,
+		   portfolio_4_img_path,
+		   portfolio_5_img_path,
+		   portfolio_6_img_path,
+		   
+		   <!-- skill -->
+		   skill_1, 
+		   skill_1_score, 
+		   skill_2, 
+		   skill_2_score, 
+		   skill_3, 
+		   skill_3_score, 
+		   skill_4, 
+		   skill_4_score, 
+		   skill_5, 
+		   skill_5_score, 
+		   skill_6, 
+		   skill_6_score, 
+		   skill_7, 
+		   skill_7_score,
+		   skill_8, skill_8_score,
+		   
+		   <!-- portfolio_1 -->
+		   portfolio_1_title, 
+		   portfolio_1_info,
+		   portfolio_1_sub_title_1,
+		   portfolio_1_sub_title_1_content,
+		   portfolio_1_sub_title_2,
+		   portfolio_1_sub_title_2_content, 
+		   portfolio_1_sub_title_3,
+		   portfolio_1_sub_title_3_content,
+		   portfolio_1_client, 
+		   portfolio_1_date, 
+		   portfolio_1_service,
+		   
+		   <!-- portfolio_2 -->
+		   portfolio_2_title, 
+		   portfolio_2_info,
+		   portfolio_2_sub_title_1,
+		   portfolio_2_sub_title_1_content,
+		   portfolio_2_sub_title_2,
+		   portfolio_2_sub_title_2_content, 
+		   portfolio_2_sub_title_3,
+		   portfolio_2_sub_title_3_content,
+		   portfolio_2_client, 
+		   portfolio_2_date, 
+		   portfolio_2_service,
+		   
+		   <!-- portfolio_3 -->
+		   portfolio_3_title, 
+		   portfolio_3_info,
+		   portfolio_3_sub_title_1,
+		   portfolio_3_sub_title_1_content,
+		   portfolio_3_sub_title_2,
+		   portfolio_3_sub_title_2_content, 
+		   portfolio_3_sub_title_3,
+		   portfolio_3_sub_title_3_content,
+		   portfolio_3_client, 
+		   portfolio_3_date, 
+		   portfolio_3_service,
+		   
+		   <!-- portfolio_4 -->
+		   portfolio_4_title, 
+		   portfolio_4_info,
+		   portfolio_4_sub_title_1,
+		   portfolio_4_sub_title_1_content,
+		   portfolio_4_sub_title_2,
+		   portfolio_4_sub_title_2_content, 
+		   portfolio_4_sub_title_3,
+		   portfolio_4_sub_title_3_content,
+		   portfolio_4_client, 
+		   portfolio_4_date, 
+		   portfolio_4_service,
+		   
+		   <!-- portfolio_5 -->
+		   portfolio_5_title, 
+		   portfolio_5_info,
+		   portfolio_5_sub_title_1,
+		   portfolio_5_sub_title_1_content,
+		   portfolio_5_sub_title_2,
+		   portfolio_5_sub_title_2_content, 
+		   portfolio_5_sub_title_3,
+		   portfolio_5_sub_title_3_content,
+		   portfolio_5_client, 
+		   portfolio_5_date, 
+		   portfolio_5_service,
+		   
+		   <!-- portfolio_6 -->
+		   portfolio_6_title, 
+		   portfolio_6_info,
+		   portfolio_6_sub_title_1,
+		   portfolio_6_sub_title_1_content,
+		   portfolio_6_sub_title_2,
+		   portfolio_6_sub_title_2_content, 
+		   portfolio_6_sub_title_3,
+		   portfolio_6_sub_title_3_content,
+		   portfolio_6_client, 
+		   portfolio_6_date, 
+		   portfolio_6_service,
+		   
+		   linkedin_url, 
+		   github_url, 
+		   blog_url
+	  from resume_info
+</select>
+
 <!-- update -->
 <update id="updateResume" parameterType="kr.co.youmustcatchme.portfolio.model.ResumeVO">
 	Update resume_info

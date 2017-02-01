@@ -37,6 +37,13 @@ public class ResumeController {
 		model.addAttribute("resume", resume);
 		return "resume/resumeForm";
 	}
+	
+	@RequestMapping(value="/list.do")
+	public String listResumes(Model model) {
+		ArrayList<ResumeVO> resumeList = resumeRepo.selectAllResume();
+		model.addAttribute("resumeList", resumeList);
+		return "resume/list";
+	}
 
 	@RequestMapping(value="/updateForm.do", method=RequestMethod.POST)
 	public String updateResume(@ModelAttribute("id") String memberId, ResumeVO resume, Model model) {

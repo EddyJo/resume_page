@@ -20,7 +20,7 @@
 			<mvc:mapping path="/resume/update.do"/>
 			<mvc:mapping path="/resume/updateForm.do"/>
 			<mvc:mapping path="/resume/myresume.do"/>
-			<bean class="kr.co.youmustcatchme.member.util.LoginCheckInterceptor" />
+			<bean class="kr.co.youmustcatchme.util.LoginCheckInterceptor" />
 		</mvc:interceptor>
 	</mvc:interceptors>
 	

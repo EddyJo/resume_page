@@ -71,8 +71,8 @@
 	                        <a href="${loginUrl}">Log In</a>
 	                    </li>
                    	</c:if>
-                    <!-- 유저 리스트 -->
-                    <c:url value="/member/list.do" var="memberListUrl"/>
+                    <!-- 이력서 리스트 -->
+                    <c:url value="/resume/list.do" var="memberListUrl"/>
                     <li class="page-scroll">
                         <a href="${memberListUrl}">UserList</a>
                     </li>
@@ -105,11 +105,7 @@
     <header>
     	<div class="container">
     		${id}
-     		<c:url value="/resume/sample.do" var="samplePortfolUrl"/>
-			<a href="${samplePortfolUrl}">이력서 샘플 page</a>
-     		<c:url value="/resume/myresume.do" var="createResumeUrl"/>
-			<a href="${createResumeUrl}">내 이력서</a>
-     	</div>
+		</div>
     </header>
 
     <!-- jQuery -->

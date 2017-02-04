@@ -72,7 +72,7 @@
 	                    </li>
                    	</c:if>
                     <!-- 이력서 리스트 -->
-                    <c:url value="/resume/list.do" var="resumeListUrl"/>
+                    <c:url value="/resume/resumelist.do" var="resumeListUrl"/>
                     <li class="page-scroll">
                         <a href="${resumeListUrl}">Resume List</a>
                     </li>

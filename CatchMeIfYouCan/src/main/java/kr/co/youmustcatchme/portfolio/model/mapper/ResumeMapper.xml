@@ -497,5 +497,6 @@
 				portfolio_6_date = #{portfolio6Date},
 				portfolio_6_Service = #{portfolio6Service}
 			</set>
+		where member_id = #{memberId}
 </update>
 </mapper>

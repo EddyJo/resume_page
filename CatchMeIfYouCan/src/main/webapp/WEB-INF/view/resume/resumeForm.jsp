@@ -103,7 +103,7 @@
 						<hr>
 						<div class="label">AGE</div>
 						<div class='detail'>
-							<input type="text" name="age" id="age" value="${resume.getAge()}">
+							<input type="number" name="age" id="age" value="${resume.getAge()}">
 						</div>
 						<br>
 						<div class="label">Phone</div>

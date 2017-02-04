@@ -11,7 +11,7 @@ public class ResumeVO {
 	private String job2;
 	private String job3;
 	private String phone;
-	private String age;
+	private int age;
 	private String address;
 	private String skill1;
 	private int skill1Score;
@@ -160,10 +160,10 @@ public class ResumeVO {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	public String getAge() {
+	public int getAge() {
 		return age;
 	}
-	public void setAge(String age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 	public String getAddress() {

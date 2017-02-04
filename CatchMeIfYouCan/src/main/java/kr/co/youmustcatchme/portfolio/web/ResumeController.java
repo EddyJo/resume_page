@@ -55,12 +55,11 @@ public class ResumeController {
 			이게 가능한 것은 textarae를 통해 넘어오는 변수를 처리하는 setter와 getter가 모두 비슷한 이름을 가지고 있기 때문
 
 		 */
-
+		resume.setMemberId(memberId);
 		//일단 받아온 정보를 update하여 DB에 저장
 		//(왜나하면 모든 컬럼이 바뀌는것이 아니고 몇몇 컬럼만 바꾸기 때문에 그냥 뷰에서 받아온 resume으로 작업 진행지 기존 데이터가 없음)
 		resumeRepo.updateResume(resume);
-		//저장된 이력서 정보를 다시 불러온다
-		resume = resumeRepo.selectResume(memberId);
+		
 		//getPortfolio[1~6]Info, setPortfolio[1~6]Info 메서드를 담기 위한 ArrayList들
 		ArrayList<Method> getInfos = new ArrayList<Method>();
 		ArrayList<Method> setInfos = new ArrayList<Method>();
@@ -113,6 +112,8 @@ public class ResumeController {
 			catch (InvocationTargetException e) {e.printStackTrace();}
 		}
 		
+		//저장된 이력서 정보를 다시 불러온다
+		resume = resumeRepo.selectResume(memberId);
 		// \r\n을 <br>로 치환한 텍스트를 담은 ResumeVO 타입의 인스턴스인 resume을 response에 담아 보낸다.
 		model.addAttribute("resume", resume);
 		return "resume/myresume";

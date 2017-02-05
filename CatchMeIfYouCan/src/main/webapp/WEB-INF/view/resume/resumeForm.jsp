@@ -15,7 +15,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>작업 중...</title>
+<title>이력서 작성 페이지</title>
 
 <!-- Bootstrap Core CSS -->
 <link
@@ -74,6 +74,9 @@
 							<li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
 							<li class="page-scroll"><a href="#about">About</a></li>
 							<li class="page-scroll"><a href="#contact">Contact</a></li>
+							<!-- 홈으로 -->
+							<li class="page-scroll"><a
+							href="${pageContext.request.contextPath}">홈으로</a></li>
 							<li><input type="submit" value="저장"></li>
 							<li><input type="reset" value="취소"></li>
 						</ul>

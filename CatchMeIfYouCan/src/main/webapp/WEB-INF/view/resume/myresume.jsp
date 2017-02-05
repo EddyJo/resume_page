@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>작업 중...</title>
+    <title>내 이력서</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="${pageContext.request.contextPath}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -68,6 +68,9 @@
                     <li class="page-scroll">
                     	<c:url value="update.do" var="updateUrl"/>
                         <a href="${updateUrl}">수정하기</a>
+                    </li>
+                    <li class="page-scroll">
+                    	<a href="${pageContext.request.contextPath}">홈으로</a>
                     </li>
                 </ul>
             </div>

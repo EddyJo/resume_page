@@ -65,6 +65,10 @@
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
                     </li>
+                    <!-- 홈으로 -->
+					<li class="page-scroll">
+						<a href="${pageContext.request.contextPath}">홈으로</a>
+					</li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
